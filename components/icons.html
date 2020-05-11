@@ -1,0 +1,2312 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><title>Studio</title><meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width"/><meta name="description" content="Documentation for IoT Studio"/><link rel="icon" type="image/x-icon" href="/favicon.png"/><meta name="next-head-count" content="5"/><link rel="preload" href="/_next/static/lJ8f1OPXj1LIX3jXxNe5T/pages/components/icons.js" as="script"/><link rel="preload" href="/_next/static/lJ8f1OPXj1LIX3jXxNe5T/pages/_app.js" as="script"/><link rel="preload" href="/_next/static/runtime/webpack-b65cab0b00afd201cbda.js" as="script"/><link rel="preload" href="/_next/static/chunks/framework.7ae2effc5b53140c6b41.js" as="script"/><link rel="preload" href="/_next/static/chunks/09744744.f2a5d7730b8c03aefecd.js" as="script"/><link rel="preload" href="/_next/static/chunks/b787c9e4.005a483b956bfc537fda.js" as="script"/><link rel="preload" href="/_next/static/chunks/3ffd58240c78583792684c15c0ccd050a259f18b.259d753eae00fece9338.js" as="script"/><link rel="preload" href="/_next/static/runtime/main-31dd8d033ab18ba4a707.js" as="script"/><style id="jss-server-side">.MuiSvgIcon-root {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 1.5rem;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  flex-shrink: 0;
+  user-select: none;
+}
+.MuiSvgIcon-colorPrimary {
+  color: #296DDA;
+}
+.MuiSvgIcon-colorSecondary {
+  color: #2BA68C;
+}
+.MuiSvgIcon-colorAction {
+  color: rgba(0, 0, 0, 0.54);
+}
+.MuiSvgIcon-colorError {
+  color: #F55753;
+}
+.MuiSvgIcon-colorDisabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+.MuiSvgIcon-fontSizeInherit {
+  font-size: inherit;
+}
+.MuiSvgIcon-fontSizeSmall {
+  font-size: 1rem;
+}
+.MuiSvgIcon-fontSizeLarge {
+  font-size: 2rem;
+}
+.MuiPaper-root {
+  color: #626262;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: #FFF;
+}
+.MuiPaper-rounded {
+  border-radius: 4px;
+}
+.MuiPaper-outlined {
+  border: 1px solid #EAEEF1;
+}
+.MuiPaper-elevation0 {
+  box-shadow: none;
+}
+.MuiPaper-elevation1 {
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation2 {
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation3 {
+  box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation4 {
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation5 {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation6 {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation7 {
+  box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation8 {
+  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation9 {
+  box-shadow: 0px 5px 6px -3px rgba(0,0,0,0.2),0px 9px 12px 1px rgba(0,0,0,0.14),0px 3px 16px 2px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation10 {
+  box-shadow: 0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation11 {
+  box-shadow: 0px 6px 7px -4px rgba(0,0,0,0.2),0px 11px 15px 1px rgba(0,0,0,0.14),0px 4px 20px 3px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation12 {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation13 {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 13px 19px 2px rgba(0,0,0,0.14),0px 5px 24px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation14 {
+  box-shadow: 0px 7px 9px -4px rgba(0,0,0,0.2),0px 14px 21px 2px rgba(0,0,0,0.14),0px 5px 26px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation15 {
+  box-shadow: 0px 8px 9px -5px rgba(0,0,0,0.2),0px 15px 22px 2px rgba(0,0,0,0.14),0px 6px 28px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation16 {
+  box-shadow: 0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation17 {
+  box-shadow: 0px 8px 11px -5px rgba(0,0,0,0.2),0px 17px 26px 2px rgba(0,0,0,0.14),0px 6px 32px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation18 {
+  box-shadow: 0px 9px 11px -5px rgba(0,0,0,0.2),0px 18px 28px 2px rgba(0,0,0,0.14),0px 7px 34px 6px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation19 {
+  box-shadow: 0px 9px 12px -6px rgba(0,0,0,0.2),0px 19px 29px 2px rgba(0,0,0,0.14),0px 7px 36px 6px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation20 {
+  box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 20px 31px 3px rgba(0,0,0,0.14),0px 8px 38px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation21 {
+  box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 21px 33px 3px rgba(0,0,0,0.14),0px 8px 40px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation22 {
+  box-shadow: 0px 10px 14px -6px rgba(0,0,0,0.2),0px 22px 35px 3px rgba(0,0,0,0.14),0px 8px 42px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation23 {
+  box-shadow: 0px 11px 14px -7px rgba(0,0,0,0.2),0px 23px 36px 3px rgba(0,0,0,0.14),0px 9px 44px 8px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation24 {
+  box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12);
+}
+.MuiCollapse-container {
+  height: 0;
+  overflow: hidden;
+  transition: height 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiCollapse-entered {
+  height: auto;
+  overflow: visible;
+}
+.MuiCollapse-hidden {
+  visibility: hidden;
+}
+.MuiCollapse-wrapper {
+  display: flex;
+}
+.MuiCollapse-wrapperInner {
+  width: 100%;
+}
+.MuiAppBar-root {
+  width: 100%;
+  display: flex;
+  z-index: 1100;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.MuiAppBar-positionFixed {
+  top: 0;
+  left: auto;
+  right: 0;
+  position: fixed;
+}
+@media print {
+  .MuiAppBar-positionFixed {
+    position: absolute;
+  }
+}
+  .MuiAppBar-positionAbsolute {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: absolute;
+  }
+  .MuiAppBar-positionSticky {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: sticky;
+  }
+  .MuiAppBar-positionStatic {
+    position: static;
+    transform: translateZ(0);
+  }
+  .MuiAppBar-positionRelative {
+    position: relative;
+  }
+  .MuiAppBar-colorDefault {
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #f5f5f5;
+  }
+  .MuiAppBar-colorPrimary {
+    color: #FFF;
+    background-color: #296DDA;
+  }
+  .MuiAppBar-colorSecondary {
+    color: #FFF;
+    background-color: #2BA68C;
+  }
+  .MuiAppBar-colorInherit {
+    color: inherit;
+  }
+  .MuiAppBar-colorTransparent {
+    color: inherit;
+    background-color: transparent;
+  }
+  .MuiButtonBase-root {
+    color: inherit;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    display: inline-flex;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    align-items: center;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    justify-content: center;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .MuiButtonBase-root::-moz-focus-inner {
+    border-style: none;
+  }
+  .MuiButtonBase-root.Mui-disabled {
+    cursor: default;
+    pointer-events: none;
+  }
+
+  .jss9 {  }
+  .jss115 {
+    flex-grow: 1;
+  }
+  .jss121 {  }
+  .jss128 {  }
+  .jss302 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 16px;
+  }
+  .jss303 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss304 {  }
+  .jss305 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss306 {  }
+  .jss307 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss308 {  }
+  .jss309 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss310 {  }
+  .jss311 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss312 {  }
+  .jss313 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss314 {  }
+  .jss315 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss316 {  }
+  .jss317 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss318 {  }
+  .jss319 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss320 {  }
+  .jss321 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss322 {  }
+  .jss323 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss324 {  }
+  .jss325 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss326 {  }
+  .jss327 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss328 {  }
+  .jss329 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss330 {  }
+  .jss331 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss332 {  }
+  .jss333 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss334 {  }
+  .jss335 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss336 {  }
+  .jss337 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss338 {  }
+  .jss339 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss340 {  }
+  .jss341 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss342 {  }
+  .jss343 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss344 {  }
+  .jss345 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss346 {  }
+  .jss347 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss348 {  }
+  .jss349 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss350 {  }
+  .jss351 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss352 {  }
+  .jss353 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss354 {  }
+  .jss355 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss356 {  }
+  .jss357 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss358 {  }
+  .jss359 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss360 {  }
+  .jss361 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss362 {  }
+  .jss363 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss364 {  }
+  .jss365 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss366 {  }
+  .jss367 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss368 {  }
+  .jss369 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss370 {  }
+  .jss371 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss372 {  }
+  .jss373 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss374 {  }
+  .jss375 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss376 {  }
+  .jss377 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss378 {  }
+  .jss379 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss380 {  }
+  .jss381 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss382 {  }
+  .jss383 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss384 {  }
+  .jss385 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss386 {  }
+  .jss387 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss388 {  }
+  .jss389 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss390 {  }
+  .jss391 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss392 {  }
+  .jss393 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss394 {  }
+  .jss395 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss396 {  }
+  .jss397 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss398 {  }
+  .jss399 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss400 {  }
+  .jss401 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss402 {  }
+  .jss403 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss404 {  }
+  .jss405 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss406 {  }
+  .jss407 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss408 {  }
+  .jss409 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss410 {  }
+  .jss411 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss412 {  }
+  .jss413 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss414 {  }
+  .jss415 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss416 {  }
+  .jss417 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss418 {  }
+  .jss419 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss420 {  }
+  .jss421 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss422 {  }
+  .jss423 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss424 {  }
+  .jss425 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss426 {  }
+  .jss427 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss428 {  }
+  .jss429 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss430 {  }
+  .jss431 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss432 {  }
+  .jss433 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss434 {  }
+  .jss435 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss436 {  }
+  .jss437 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss438 {  }
+  .jss439 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss440 {  }
+  .jss441 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss442 {  }
+  .jss443 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss444 {  }
+  .jss445 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss446 {  }
+  .jss447 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss448 {  }
+  .jss449 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss450 {  }
+  .jss451 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss452 {  }
+  .jss453 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss454 {  }
+  .jss455 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss456 {  }
+  .jss457 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss458 {  }
+  .jss459 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss460 {  }
+  .jss461 {
+    width: 160px;
+    height: 80px;
+    padding-top: 16px;
+  }
+  .jss462 {  }
+  .MuiTypography-root {
+    margin: 0;
+  }
+  .MuiTypography-body2 {
+    font-size: 0.75rem;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+  }
+  .MuiTypography-body1 {
+    font-size: inherit;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  .MuiTypography-caption {
+    font-size: 0.75rem;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.66;
+  }
+  .MuiTypography-button {
+    font-size: 0.875rem;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    text-transform: uppercase;
+  }
+  .MuiTypography-h1 {
+    font-size: 4.5rem;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    line-height: 1.167;
+  }
+  .MuiTypography-h2 {
+    font-size: 2.125rem;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  .MuiTypography-h3 {
+    font-size: 1.25rem;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.167;
+  }
+  .MuiTypography-h4 {
+    font-size: 1rem;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.235;
+  }
+  .MuiTypography-h5 {
+    font-size: 0.875rem;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.334;
+  }
+  .MuiTypography-h6 {
+    font-size: 0.75rem;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+  .MuiTypography-subtitle1 {
+    font-size: 1rem;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+  }
+  .MuiTypography-subtitle2 {
+    font-size: 0.875rem;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    line-height: 1.57;
+  }
+  .MuiTypography-overline {
+    font-size: 0.75rem;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 2.66;
+    text-transform: uppercase;
+  }
+  .MuiTypography-srOnly {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+  }
+  .MuiTypography-alignLeft {
+    text-align: left;
+  }
+  .MuiTypography-alignCenter {
+    text-align: center;
+  }
+  .MuiTypography-alignRight {
+    text-align: right;
+  }
+  .MuiTypography-alignJustify {
+    text-align: justify;
+  }
+  .MuiTypography-noWrap {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .MuiTypography-gutterBottom {
+    margin-bottom: 0.35em;
+  }
+  .MuiTypography-paragraph {
+    margin-bottom: 16px;
+  }
+  .MuiTypography-colorInherit {
+    color: inherit;
+  }
+  .MuiTypography-colorPrimary {
+    color: #296DDA;
+  }
+  .MuiTypography-colorSecondary {
+    color: #2BA68C;
+  }
+  .MuiTypography-colorTextPrimary {
+    color: #626262;
+  }
+  .MuiTypography-colorTextSecondary {
+    color: #939393;
+  }
+  .MuiTypography-colorError {
+    color: #F55753;
+  }
+  .MuiTypography-displayInline {
+    display: inline;
+  }
+  .MuiTypography-displayBlock {
+    display: block;
+  }
+  .MuiIconButton-root {
+    flex: 0 0 auto;
+    color: #939393;
+    padding: 12px;
+    overflow: visible;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 50%;
+  }
+  .MuiIconButton-root:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+  .MuiIconButton-root.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+    background-color: transparent;
+  }
+@media (hover: none) {
+  .MuiIconButton-root:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-edgeStart {
+    margin-left: -12px;
+  }
+  .MuiIconButton-sizeSmall.MuiIconButton-edgeStart {
+    margin-left: -3px;
+  }
+  .MuiIconButton-edgeEnd {
+    margin-right: -12px;
+  }
+  .MuiIconButton-sizeSmall.MuiIconButton-edgeEnd {
+    margin-right: -3px;
+  }
+  .MuiIconButton-colorInherit {
+    color: inherit;
+  }
+  .MuiIconButton-colorPrimary {
+    color: #296DDA;
+  }
+  .MuiIconButton-colorPrimary:hover {
+    background-color: rgba(41, 109, 218, 0.04);
+  }
+@media (hover: none) {
+  .MuiIconButton-colorPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-colorSecondary {
+    color: #2BA68C;
+  }
+  .MuiIconButton-colorSecondary:hover {
+    background-color: rgba(43, 166, 140, 0.04);
+  }
+@media (hover: none) {
+  .MuiIconButton-colorSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-sizeSmall {
+    padding: 3px;
+    font-size: 1.125rem;
+  }
+  .MuiIconButton-label {
+    width: 100%;
+    display: flex;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+  .jss294 {
+    padding: 9px;
+  }
+  .jss297 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    cursor: inherit;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    z-index: 1;
+    position: absolute;
+  }
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+strong, b {
+  font-weight: 700;
+}
+body {
+  color: #2c2c2c;
+  margin: 0;
+  font-size: 14px;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  background-color: white;
+}
+@media print {
+  body {
+    background-color: #fff;
+  }
+}
+body::backdrop {
+  background-color: #F2F4F8;
+}
+.clearFix::before, .clearFix::after {
+  content: "";
+  display: table;
+}
+.clearFix::after {
+  clear: both;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+pre {
+  font-family: "Jetbrains Mono", "Fira Code", monospace;
+}
+@keyframes mui-auto-fill {}
+@keyframes mui-auto-fill-cancel {}
+  .MuiInputBase-root {
+    color: #626262;
+    cursor: text;
+    display: inline-flex;
+    position: relative;
+    font-size: 0.875rem;
+    box-sizing: border-box;
+    align-items: center;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.1876em;
+  }
+  .MuiInputBase-root.Mui-disabled {
+    color: #D6D6D6;
+    cursor: default;
+  }
+  .MuiInputBase-multiline {
+    padding: 6px 0 7px;
+  }
+  .MuiInputBase-multiline.MuiInputBase-marginDense {
+    padding-top: 3px;
+  }
+  .MuiInputBase-fullWidth {
+    width: 100%;
+  }
+  .MuiInputBase-input {
+    font: inherit;
+    color: currentColor;
+    width: 100%;
+    border: 0;
+    height: 1em;
+    margin: 0;
+    display: block;
+    padding: 6px 0 7px;
+    min-width: 0;
+    background: none;
+    box-sizing: content-box;
+    line-height: 1em;
+    animation-name: mui-auto-fill-cancel;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .MuiInputBase-input::-webkit-input-placeholder {
+    color: currentColor;
+    opacity: 0.42;
+    transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+  .MuiInputBase-input::-moz-placeholder {
+    color: currentColor;
+    opacity: 0.42;
+    transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+  .MuiInputBase-input:-ms-input-placeholder {
+    color: currentColor;
+    opacity: 0.42;
+    transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+  .MuiInputBase-input::-ms-input-placeholder {
+    color: currentColor;
+    opacity: 0.42;
+    transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+  .MuiInputBase-input:focus {
+    outline: 0;
+  }
+  .MuiInputBase-input:invalid {
+    box-shadow: none;
+  }
+  .MuiInputBase-input::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  .MuiInputBase-input.Mui-disabled {
+    opacity: 1;
+  }
+  .MuiInputBase-input:-webkit-autofill {
+    animation-name: mui-auto-fill;
+    animation-duration: 5000s;
+  }
+  label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input::-webkit-input-placeholder {
+    opacity: 0 !important;
+  }
+  label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input::-moz-placeholder {
+    opacity: 0 !important;
+  }
+  label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:-ms-input-placeholder {
+    opacity: 0 !important;
+  }
+  label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input::-ms-input-placeholder {
+    opacity: 0 !important;
+  }
+  label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-webkit-input-placeholder {
+    opacity: 0.42;
+  }
+  label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-moz-placeholder {
+    opacity: 0.42;
+  }
+  label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus:-ms-input-placeholder {
+    opacity: 0.42;
+  }
+  label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-ms-input-placeholder {
+    opacity: 0.42;
+  }
+  .MuiInputBase-inputMarginDense {
+    padding-top: 3px;
+  }
+  .MuiInputBase-inputMultiline {
+    height: auto;
+    resize: none;
+    padding: 0;
+  }
+  .MuiInputBase-inputTypeSearch {
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+  }
+  .MuiFormControl-root {
+    border: 0;
+    margin: 0;
+    display: inline-flex;
+    padding: 0;
+    position: relative;
+    min-width: 0;
+    flex-direction: column;
+    vertical-align: top;
+  }
+  .MuiFormControl-marginNormal {
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+  .MuiFormControl-marginDense {
+    margin-top: 8px;
+    margin-bottom: 4px;
+  }
+  .MuiFormControl-fullWidth {
+    width: 100%;
+  }
+  .MuiFormControlLabel-root {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    margin-left: -8px;
+    margin-right: 24px;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .MuiFormControlLabel-root.Mui-disabled {
+    cursor: default;
+  }
+  .MuiFormControlLabel-labelPlacementStart {
+    margin-left: 16px;
+    margin-right: -11px;
+    flex-direction: row-reverse;
+  }
+  .MuiFormControlLabel-labelPlacementTop {
+    margin-left: 16px;
+    flex-direction: column-reverse;
+  }
+  .MuiFormControlLabel-labelPlacementBottom {
+    margin-left: 16px;
+    flex-direction: column;
+  }
+  .MuiFormControlLabel-label.Mui-disabled {
+    color: #D6D6D6;
+  }
+  .Mui-checked + .MuiFormControlLabel-label.Mui-disabled {
+    color: #626262;
+  }
+  .MuiFormGroup-root {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .MuiFormGroup-row {
+    flex-direction: row;
+  }
+  .MuiGrid-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  .MuiGrid-item {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .MuiGrid-zeroMinWidth {
+    min-width: 0;
+  }
+  .MuiGrid-direction-xs-column {
+    flex-direction: column;
+  }
+  .MuiGrid-direction-xs-column-reverse {
+    flex-direction: column-reverse;
+  }
+  .MuiGrid-direction-xs-row-reverse {
+    flex-direction: row-reverse;
+  }
+  .MuiGrid-wrap-xs-nowrap {
+    flex-wrap: nowrap;
+  }
+  .MuiGrid-wrap-xs-wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+  .MuiGrid-align-items-xs-center {
+    align-items: center;
+  }
+  .MuiGrid-align-items-xs-flex-start {
+    align-items: flex-start;
+  }
+  .MuiGrid-align-items-xs-flex-end {
+    align-items: flex-end;
+  }
+  .MuiGrid-align-items-xs-baseline {
+    align-items: baseline;
+  }
+  .MuiGrid-align-content-xs-center {
+    align-content: center;
+  }
+  .MuiGrid-align-content-xs-flex-start {
+    align-content: flex-start;
+  }
+  .MuiGrid-align-content-xs-flex-end {
+    align-content: flex-end;
+  }
+  .MuiGrid-align-content-xs-space-between {
+    align-content: space-between;
+  }
+  .MuiGrid-align-content-xs-space-around {
+    align-content: space-around;
+  }
+  .MuiGrid-justify-xs-center {
+    justify-content: center;
+  }
+  .MuiGrid-justify-xs-flex-end {
+    justify-content: flex-end;
+  }
+  .MuiGrid-justify-xs-space-between {
+    justify-content: space-between;
+  }
+  .MuiGrid-justify-xs-space-around {
+    justify-content: space-around;
+  }
+  .MuiGrid-justify-xs-space-evenly {
+    justify-content: space-evenly;
+  }
+  .MuiGrid-spacing-xs-1 {
+    width: calc(100% + 8px);
+    margin: -4px;
+  }
+  .MuiGrid-spacing-xs-1 > .MuiGrid-item {
+    padding: 4px;
+  }
+  .MuiGrid-spacing-xs-2 {
+    width: calc(100% + 16px);
+    margin: -8px;
+  }
+  .MuiGrid-spacing-xs-2 > .MuiGrid-item {
+    padding: 8px;
+  }
+  .MuiGrid-spacing-xs-3 {
+    width: calc(100% + 24px);
+    margin: -12px;
+  }
+  .MuiGrid-spacing-xs-3 > .MuiGrid-item {
+    padding: 12px;
+  }
+  .MuiGrid-spacing-xs-4 {
+    width: calc(100% + 32px);
+    margin: -16px;
+  }
+  .MuiGrid-spacing-xs-4 > .MuiGrid-item {
+    padding: 16px;
+  }
+  .MuiGrid-spacing-xs-5 {
+    width: calc(100% + 40px);
+    margin: -20px;
+  }
+  .MuiGrid-spacing-xs-5 > .MuiGrid-item {
+    padding: 20px;
+  }
+  .MuiGrid-spacing-xs-6 {
+    width: calc(100% + 48px);
+    margin: -24px;
+  }
+  .MuiGrid-spacing-xs-6 > .MuiGrid-item {
+    padding: 24px;
+  }
+  .MuiGrid-spacing-xs-7 {
+    width: calc(100% + 56px);
+    margin: -28px;
+  }
+  .MuiGrid-spacing-xs-7 > .MuiGrid-item {
+    padding: 28px;
+  }
+  .MuiGrid-spacing-xs-8 {
+    width: calc(100% + 64px);
+    margin: -32px;
+  }
+  .MuiGrid-spacing-xs-8 > .MuiGrid-item {
+    padding: 32px;
+  }
+  .MuiGrid-spacing-xs-9 {
+    width: calc(100% + 72px);
+    margin: -36px;
+  }
+  .MuiGrid-spacing-xs-9 > .MuiGrid-item {
+    padding: 36px;
+  }
+  .MuiGrid-spacing-xs-10 {
+    width: calc(100% + 80px);
+    margin: -40px;
+  }
+  .MuiGrid-spacing-xs-10 > .MuiGrid-item {
+    padding: 40px;
+  }
+  .MuiGrid-grid-xs-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-xs-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-xs-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-xs-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-xs-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-xs-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-xs-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-xs-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-xs-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-xs-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-xs-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-xs-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-xs-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-xs-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+@media (min-width:600px) {
+  .MuiGrid-grid-sm-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-sm-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-sm-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-sm-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-sm-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-sm-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-sm-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-sm-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-sm-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-sm-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-sm-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-sm-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-sm-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-sm-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:960px) {
+  .MuiGrid-grid-md-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-md-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-md-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-md-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-md-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-md-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-md-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-md-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-md-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-md-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-md-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-md-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-md-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-md-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:1280px) {
+  .MuiGrid-grid-lg-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-lg-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-lg-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-lg-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-lg-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-lg-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-lg-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-lg-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-lg-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-lg-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-lg-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-lg-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-lg-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-lg-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:1920px) {
+  .MuiGrid-grid-xl-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-xl-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-xl-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-xl-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-xl-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-xl-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-xl-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-xl-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-xl-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-xl-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-xl-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-xl-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-xl-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-xl-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+  .MuiInputAdornment-root {
+    height: 0.01em;
+    display: flex;
+    max-height: 2em;
+    align-items: center;
+    white-space: nowrap;
+  }
+  .MuiInputAdornment-filled.MuiInputAdornment-positionStart:not(.MuiInputAdornment-hiddenLabel) {
+    margin-top: 16px;
+  }
+  .MuiInputAdornment-positionStart {
+    margin-right: 8px;
+  }
+  .MuiInputAdornment-positionEnd {
+    margin-left: 8px;
+  }
+  .MuiInputAdornment-disablePointerEvents {
+    pointer-events: none;
+  }
+  .MuiLink-underlineNone {
+    text-decoration: none;
+  }
+  .MuiLink-underlineHover {
+    text-decoration: none;
+  }
+  .MuiLink-underlineHover:hover {
+    text-decoration: underline;
+  }
+  .MuiLink-underlineAlways {
+    text-decoration: underline;
+  }
+  .MuiLink-button {
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .MuiLink-button::-moz-focus-inner {
+    border-style: none;
+  }
+  .MuiLink-button.Mui-focusVisible {
+    outline: auto;
+  }
+  .MuiList-root {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    list-style: none;
+  }
+  .MuiList-padding {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .MuiList-subheader {
+    padding-top: 0;
+  }
+  .MuiListItem-root {
+    width: 100%;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    text-align: left;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    justify-content: flex-start;
+    text-decoration: none;
+  }
+  .MuiListItem-root.Mui-focusVisible {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+  .MuiListItem-root.Mui-selected, .MuiListItem-root.Mui-selected:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+  .MuiListItem-root.Mui-disabled {
+    opacity: 0.5;
+  }
+  .MuiListItem-container {
+    position: relative;
+  }
+  .MuiListItem-dense {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  .MuiListItem-alignItemsFlexStart {
+    align-items: flex-start;
+  }
+  .MuiListItem-divider {
+    border-bottom: 1px solid #EAEEF1;
+    background-clip: padding-box;
+  }
+  .MuiListItem-gutters {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .MuiListItem-button {
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+  .MuiListItem-button:hover {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+@media (hover: none) {
+  .MuiListItem-button:hover {
+    background-color: transparent;
+  }
+}
+  .MuiListItem-secondaryAction {
+    padding-right: 48px;
+  }
+  .jss277 {
+    top: -5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 8px;
+    border-radius: inherit;
+    pointer-events: none;
+  }
+  .jss278 {
+    padding: 0;
+    text-align: left;
+    transition: width 150ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+    line-height: 11px;
+  }
+  .jss279 {
+    width: auto;
+    height: 11px;
+    display: block;
+    padding: 0;
+    font-size: 0.75em;
+    max-width: 0.01px;
+    text-align: left;
+    transition: max-width 50ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+    visibility: hidden;
+  }
+  .jss279 > span {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .jss280 {
+    max-width: 1000px;
+    transition: max-width 100ms cubic-bezier(0.0, 0, 0.2, 1) 50ms;
+  }
+  .MuiOutlinedInput-root {
+    position: relative;
+    font-size: inherit;
+    min-height: 2.25rem;
+    line-height: 1rem;
+    border-radius: 2px;
+  }
+  .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: #CBD5DD;
+  }
+@media (hover: none) {
+  .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(0, 0, 0, 0.23);
+  }
+}
+  .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #296DDA;
+    border-width: 2px;
+  }
+  .MuiOutlinedInput-root.Mui-error .MuiOutlinedInput-notchedOutline {
+    border-color: #F55753;
+  }
+  .MuiOutlinedInput-root.Mui-disabled .MuiOutlinedInput-notchedOutline {
+    border-color: #CBD5DD;
+  }
+  .MuiOutlinedInput-root .MuiInputBase-inputMultiline {
+    line-height: 1.5em;
+  }
+  .MuiOutlinedInput-root .MuiIconButton-root {
+    padding: 4px;
+  }
+  .MuiOutlinedInput-colorSecondary.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #2BA68C;
+  }
+  .MuiOutlinedInput-adornedStart {
+    padding-left: 14px;
+  }
+  .MuiOutlinedInput-adornedEnd {
+    padding-right: 14px;
+  }
+  .MuiOutlinedInput-multiline {
+    padding: 18.5px 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .MuiOutlinedInput-multiline.MuiOutlinedInput-marginDense {
+    padding-top: 10.5px;
+    padding-bottom: 10.5px;
+  }
+  .MuiOutlinedInput-notchedOutline {
+    border-color: #CBD5DD;
+  }
+  .MuiOutlinedInput-input {
+    padding: 18.5px 14px;
+    min-height: 1rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .MuiOutlinedInput-input:-webkit-autofill {
+    border-radius: inherit;
+  }
+  .MuiOutlinedInput-inputMarginDense {
+    padding-top: 10.5px;
+    padding-bottom: 10.5px;
+  }
+  .MuiOutlinedInput-inputMultiline {
+    padding: 0;
+  }
+  .MuiOutlinedInput-inputAdornedStart {
+    padding-left: 0;
+  }
+  .MuiOutlinedInput-inputAdornedEnd {
+    padding-right: 0;
+  }
+  .MuiRadio-root {
+    color: #939393;
+    padding: 6px;
+  }
+  .MuiRadio-colorPrimary.Mui-checked {
+    color: #296DDA;
+  }
+  .MuiRadio-colorPrimary.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+  }
+  .MuiRadio-colorPrimary.Mui-checked:hover {
+    background-color: rgba(41, 109, 218, 0.04);
+  }
+@media (hover: none) {
+  .MuiRadio-colorPrimary.Mui-checked:hover {
+    background-color: transparent;
+  }
+}
+  .MuiRadio-colorSecondary.Mui-checked {
+    color: #2BA68C;
+  }
+  .MuiRadio-colorSecondary.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+  }
+  .MuiRadio-colorSecondary.Mui-checked:hover {
+    background-color: rgba(43, 166, 140, 0.04);
+  }
+@media (hover: none) {
+  .MuiRadio-colorSecondary.Mui-checked:hover {
+    background-color: transparent;
+  }
+}
+  .MuiToolbar-root {
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+  .MuiToolbar-gutters {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+@media (min-width:600px) {
+  .MuiToolbar-gutters {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+  .MuiToolbar-regular {
+    min-height: 56px;
+  }
+@media (min-width:0px) and (orientation: landscape) {
+  .MuiToolbar-regular {
+    min-height: 48px;
+  }
+}
+@media (min-width:600px) {
+  .MuiToolbar-regular {
+    min-height: 64px;
+  }
+}
+  .MuiToolbar-dense {
+    min-height: 48px;
+  }
+
+  .jss298 {
+    width: 18px;
+    height: 18px;
+    margin: 1px;
+    box-sizing: border-box;
+    transition: border .1s;
+    border-radius: 999em;
+  }
+  .jss299 {
+    border: 6px solid currentColor;
+  }
+  .jss300 {
+    border: 2px solid currentColor;
+  }
+  .jss301 {
+    border: 2px solid currentColor;
+  }
+  .jss122 {
+    position: relative;
+    margin-bottom: 32px;
+  }
+  .jss123 {
+    border: 1px solid #dfe2e5;
+    padding: 24px;
+    background: white;
+    margin-top: 0;
+    border-radius: 4px;
+    margin-bottom: 16px;
+  }
+  .jss124 {
+    left: 56px;
+    color: silver;
+    padding: 4px;
+    position: absolute;
+    margin-top: -29px;
+    background-color: white;
+  }
+  .jss124:hover {
+    color: white;
+    background-color: silver;
+  }
+  .jss125 {
+    left: 24px;
+    color: silver;
+    padding: 4px;
+    position: absolute;
+    margin-top: -29px;
+    background-color: white;
+  }
+  .jss125:hover {
+    color: white;
+    background-color: silver;
+  }
+  .jss126 {
+    display: none;
+  }
+  .jss126.open {
+    border: 1px solid #dfe2e5;
+    display: block;
+    overflow: auto !important;
+    border-radius: 4px;
+  }
+  .jss126 > textarea {
+    white-space: pre !important;
+  }
+  .jss126 > pre {
+    white-space: pre !important;
+  }
+  .jss126 > textarea:focus {
+    outline: none;
+  }
+  .jss127 {
+    color: #f8f8f2;
+    margin: 8px 0;
+    display: block;
+    padding: 16px 24px;
+    font-size: 0.85em;
+    background: #ff5555;
+    white-space: pre-wrap;
+    border-radius: 4px;
+  }
+  .jss120 {
+    border: 1px solid #dfe2e5;
+    border-radius: 4px;
+    margin-bottom: 32px;
+  }
+  .jss120 > pre {
+    margin: 0;
+    overflow: auto;
+  }
+  .jss468.active {
+    font-weight: bold;
+  }
+  .jss468.leaf:before {
+    width: 4px;
+    height: 4px;
+    margin: 6px;
+    content: "";
+    display: block;
+    background: #666666;
+    border-radius: 50%;
+  }
+  .jss468.leaf.active {
+    color: #0366d6;
+    font-weight: bold;
+  }
+  .jss469 {
+    padding-left: 13px;
+  }
+  .jss117 {
+    top: -80px;
+    display: block;
+    position: relative;
+  }
+@media (min-width: 600px) {
+  .jss117 {
+    top: -88px;
+  }
+}
+  .jss116 {
+    margin-top: 24px;
+    border-bottom: 1px solid #eaecef;
+    margin-bottom: 16px;
+    padding-bottom: .3em;
+  }
+  .jss119 {
+    margin-top: 24px;
+    border-bottom: 1px solid #eaecef;
+    margin-bottom: 16px;
+    padding-bottom: .3em;
+  }
+  .jss118 {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+  .jss10 {
+    background: linear-gradient(to right, #8964DC, #2864C4);
+  }
+  .jss11 {
+    color: white;
+  }
+  .jss12 {
+    display: inline-flex;
+    align-items: center;
+    line-height: 0;
+  }
+  .jss12 span {
+    font-size: 24px;
+    margin-left: 4px;
+  }
+  .jss13 {
+    line-height: 0;
+  }
+  .jss14 {
+    display: none;
+  }
+@media (max-width: 600px) {
+  .jss14 {
+    display: block;
+  }
+}
+
+
+  .jss1 {
+    height: 100vh;
+    display: grid;
+    grid-template: 
+      "header header" auto
+      "sidebar main" 1fr
+      "sidebar footer" auto / 240px calc(100% - 240px);
+    ;
+  }
+@media (max-width: 600px) {
+  .jss1 {
+    grid-template: 
+        "header header" auto
+        "sidebar main" 1fr
+        "sidebar footer" auto / 0 100%;
+      ;
+  }
+  .jss1 .jss3 {
+    box-shadow: none;
+  }
+}
+  .jss2 {
+    position: fixed;
+    grid-area: header;
+  }
+  .jss3 {
+    top: 64px;
+    height: calc(100vh - 64px);
+    padding: 8px;
+    overflow: auto;
+    position: fixed;
+    grid-area: sidebar;
+    box-shadow: 4px 0px 8px -8px rgba(0,0,0,0.2);
+  }
+@media (max-width: 600px) {
+  .jss3 {
+    top: 58px;
+    height: calc(100vh - 58px);
+    z-index: 9999;
+    background-color: rgba(255,255,255,0.99);
+  }
+}
+  .jss4 {
+    padding: 16px 0;
+  }
+  .jss5 {
+    padding: 0 36px 24px;
+    grid-area: main;
+    margin-top: 58px;
+  }
+@media (min-width: 600px) {
+  .jss5 {
+    box-shadow: 4px 0px 8px -8px rgba(0,0,0,0.2);
+    margin-top: 64px;
+    margin-right: 260px;
+  }
+}
+  .jss5 > .toc {
+    display: none;
+  }
+@media (min-width: 600px) {
+  .jss5 > .toc {
+    top: 112px;
+    float: right;
+    right: 24px;
+    width: 200px;
+    display: block;
+    z-index: 3;
+    position: fixed;
+  }
+}
+  .jss5 > .toc ol {
+    list-style-type: circle;
+    padding-inline-start: 1.43em;
+  }
+  .jss5 > .toc li {
+    margin: 0.5em 0;
+  }
+  .jss5 > .toc a {
+    color: gray;
+    text-decoration: none;
+  }
+  .jss5 > .toc a:hover {
+    color: #0366d6;
+  }
+  .jss5 > .toc > ol:empty {
+    visibility: hidden;
+  }
+  .jss5 > .toc > ol:before {
+    color: silver;
+    content: "CONTENTS";
+    position: absolute;
+    transform: translate(-1.47em, -1.97em);
+  }
+  .jss6 {
+    padding: 24px 36px;
+    grid-area: footer;
+  }
+  .jss7 {  }
+@media (max-width: 600px) {
+  .jss7 {
+    grid-area: sidebar;
+    display: none;
+  }
+}</style></head><body><div id="__next"><div class="MuiBox-root jss9 jss1"><header class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorTransparent jss10 jss2 mui-fixed MuiPaper-elevation4"><div class="MuiToolbar-root MuiToolbar-regular jss11 MuiToolbar-gutters"><button class="MuiButtonBase-root MuiIconButton-root jss14 MuiIconButton-colorInherit MuiIconButton-edgeStart" tabindex="0" type="button"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span></button><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss12 MuiTypography-colorInherit" href="/"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M23.548 22.924h-6.28v-9.937c0-1.65-.434-3.016-1.29-4.06-.917-1.118-2.203-1.708-3.718-1.708-1.38 0-2.585.505-3.58 1.499-.997.994-1.502 2.198-1.502 3.577 0 1.42.467 2.62 1.389 3.562.919.942 2.136 1.44 3.52 1.44.258 0 .512-.017.762-.05v6.175a8.643 8.643 0 0 1-.589.022c-3.338 0-6.033-1.057-8.24-3.232C1.82 18.044.75 15.39.75 12.097c0-3.196 1.084-5.828 3.313-8.047 2.23-2.22 4.871-3.3 8.073-3.3 3.613 0 6.356 1 8.386 3.056 2.036 2.062 3.026 4.847 3.026 8.513v10.605z"></path></svg> <span>Studio</span></a><div class="MuiBox-root jss115"></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss13 MuiTypography-colorInherit" href="###UNAVAILABLE"><svg width="24" height="24" viewBox="0 0 36 36"><path fill="currentColor" d="M2 14l9.38 9v-9l-4-12.28c-.205-.632-1.176-.632-1.38 0zM34 14l-9.38 9v-9l4-12.28c.205-.632 1.176-.632 1.38 0z"></path><path fill="currentColor" d="M18 34.38L3 14h30z"></path><path fill="currentColor" d="M18 34.38L11.38 14H2l4 11zM18 34.38L24.62 14H34l-4 11z"></path><path fill="currentColor" d="M2 14L.1 20.16c-.18.565 0 1.2.5 1.56l17.42 12.66z"></path><path fill="currentColor" d="M34 14l1.9 6.16c.18.565 0 1.2-.5 1.56L18 34.38z"></path></svg></a></div></header><main class="jss5"><nav class="toc"><ol class="toc-level toc-level-1"><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#usage">Usage</a></li><li class="toc-item toc-item-h2"><a class="toc-link toc-link-h2" href="#showroom">Showroom</a></li></ol></nav><h1 class="jss116"><a class="jss117" id="icons"></a>Icons</h1><p class="jss118">SVG 图标，一些来自 <a href="https://material-ui.com/components/material-icons/">material-ui icons</a>，一些来自自定义，遵循前者的命名风格。</p><h2 class="jss119"><a class="jss117" id="usage"></a>Usage</h2><div class="MuiBox-root jss121 jss120"><pre class="prism-code language-tsx" style="color:#393A34;background-color:#f6f8fa;padding:24px;border-radius:4px"><div class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">import</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"> </span><span class="token maybe-class-name">Add</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">from</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&#x27;@ide/icons&#x27;</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token maybe-class-name">ReactDOM</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">render</span><span class="token punctuation" style="color:#393A34">(</span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag class-name" style="color:#00009f">Add</span><span class="token tag" style="color:#00009f"> </span><span class="token tag punctuation" style="color:#393A34">/&gt;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token dom variable" style="color:#36acaa">document</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">body</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span></div></pre></div><h2 class="jss119"><a class="jss117" id="showroom"></a>Showroom</h2><div class="MuiBox-root jss128 jss122"><div class="jss123"><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 MuiGrid-align-items-xs-center"><div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"><div class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"><div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedStart MuiOutlinedInput-adornedStart"><div class="MuiInputAdornment-root MuiInputAdornment-positionStart"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></div><input type="text" aria-invalid="false" class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart MuiOutlinedInput-inputAdornedStart"/><fieldset aria-hidden="true" style="padding-left:8px" class="jss277 MuiOutlinedInput-notchedOutline"><legend class="jss278" style="width:0.01px"><span>&#8203;</span></legend></fieldset></div></div></div><div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"><div class="MuiFormGroup-root MuiFormGroup-row" role="radiogroup"><label class="MuiFormControlLabel-root"><span class="MuiButtonBase-root MuiIconButton-root jss294 MuiRadio-root MuiRadio-colorSecondary jss295 Mui-checked MuiIconButton-colorSecondary" aria-disabled="false"><span class="MuiIconButton-label"><input type="radio" checked="" class="jss297" value="default"/><span class="jss298 jss299"></span></span></span><span class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1">Default</span></label><label class="MuiFormControlLabel-root"><span class="MuiButtonBase-root MuiIconButton-root jss294 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary" aria-disabled="false"><span class="MuiIconButton-label"><input type="radio" class="jss297" value="small"/><span class="jss298 jss300"></span></span></span><span class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1">Small</span></label><label class="MuiFormControlLabel-root"><span class="MuiButtonBase-root MuiIconButton-root jss294 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary" aria-disabled="false"><span class="MuiIconButton-label"><input type="radio" class="jss297" value="large"/><span class="jss298 jss301"></span></span></span><span class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1">Large</span></label></div></div></div><div class="MuiBox-root jss302"><div class="MuiBox-root jss303" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4.5H4c-1.1 0-2 .9-2 2V19c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-3.2h-5c-1.7 0-3.1-1.4-3.1-3.1s1.4-3.1 3.1-3.1H21.9V6.4c.1-1-.8-1.9-1.9-1.9zm1.7 6.3H17c-1.1 0-2 .9-2 2s.9 2 2 2h4.6c.1 0 .1-.1.1-.1v-3.6c.1-.3 0-.3 0-.3zm-4.7 3c-.6 0-1-.5-1-1 0-.6.5-1 1-1s1 .5 1 1-.4 1-1 1zM15.5 1.1L8 3.3h10.1l-.9-1.6c-.3-.6-1.1-.8-1.7-.6z"></path></svg><div class="MuiBox-root jss304">AccountBalanceWallet</div></div><div class="MuiBox-root jss305" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.8 11.3c.5-.3.8-1 .8-1.7C9.6 8.6 8.9 8 8 8s-1.6.6-1.6 1.6c0 .7.3 1.3.8 1.7L5.1 13c-.1.1-.1.2-.1.3v1.2c0 .2.1.3.3.3h5.3c.2 0 .3-.1.3-.3v-1.2c0-.1 0-.2-.1-.3l-2-1.7zM2 19V5c0-.6.4-1 1-1h18c.6 0 1 .4 1 1v14c0 .6-.4 1-1 1H3c-.6 0-1-.4-1-1zM13.5 8c-.3 0-.5.2-.5.5s.2.5.5.5h5c.3 0 .5-.2.5-.5s-.2-.5-.5-.5h-5zm1 3c-.3 0-.5.2-.5.5s.2.5.5.5h4c.3 0 .5-.2.5-.5s-.2-.5-.5-.5h-4zm1 3c-.3 0-.5.2-.5.5s.2.5.5.5h3c.3 0 .5-.2.5-.5s-.2-.5-.5-.5h-3z"></path></svg><div class="MuiBox-root jss306">AccountCard</div></div><div class="MuiBox-root jss307" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path></svg><div class="MuiBox-root jss308">Add</div></div><div class="MuiBox-root jss309" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"></path></svg><div class="MuiBox-root jss310">AddCircle</div></div><div class="MuiBox-root jss311" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path></svg><div class="MuiBox-root jss312">AddCircleOutline</div></div><div class="MuiBox-root jss313" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 7v2.99s-1.99.01-2 0V7h-3s.01-1.99 0-2h3V2h2v3h3v2h-3zm-3 4V8h-3V5H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-8h-3zM5 19l3-4 2 3 3-4 4 5H5z"></path></svg><div class="MuiBox-root jss314">AddPhotoAlternate</div></div><div class="MuiBox-root jss315" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path></svg><div class="MuiBox-root jss316">ArrowBack</div></div><div class="MuiBox-root jss317" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21c-.2 0-.5-.1-.7-.3l-9-8c-.2-.1-.3-.4-.3-.7s.1-.6.3-.7l9-8c.4-.4 1-.3 1.4.1.4.4.3 1-.1 1.4L8.5 12l8.2 7.3c.4.4.5 1 .1 1.4-.3.2-.5.3-.8.3z"></path></svg><div class="MuiBox-root jss318">ArrowBackIos</div></div><div class="MuiBox-root jss319" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.7 14.7l-7.1 7.1c-.2.2-.4.3-.7.3-.3 0-.5-.1-.7-.3l-6.9-7.1c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0l5.3 5.4V3c0-.6.4-1 1-1s1 .4 1 1v15.6l5.3-5.4c.4-.4 1-.4 1.4 0 .4.5.4 1.1 0 1.5z"></path></svg><div class="MuiBox-root jss320">ArrowDownward</div></div><div class="MuiBox-root jss321" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"></path></svg><div class="MuiBox-root jss322">ArrowDropDown</div></div><div class="MuiBox-root jss323" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 14l5-5 5 5z"></path></svg><div class="MuiBox-root jss324">ArrowDropUp</div></div><div class="MuiBox-root jss325" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.7 10.7c-.4.4-1 .4-1.4 0L13 5.3V21c0 .6-.4 1-1 1s-1-.4-1-1V5.3l-5.3 5.4c-.2.2-.4.3-.7.3-.3 0-.5-.1-.7-.3-.4-.4-.4-1 0-1.4l6.9-7.1c.2-.2.4-.3.7-.3.3 0 .5.1.7.3l7.1 7.1c.4.4.4 1 0 1.4z"></path></svg><div class="MuiBox-root jss326">ArrowUpward</div></div><div class="MuiBox-root jss327" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.3 18h2.6v-5.5h-2.6V18zm-4.6 0h2.6V6.4h-2.6V18zm-4.5 0h2.6V9.4H6.2V18zM3.7 2h16.7c.8 0 1.6.8 1.6 1.7v16.7c0 .9-.8 1.7-1.7 1.7H3.7c-1-.1-1.7-.9-1.7-1.8V3.7C2 2.7 2.8 2 3.7 2z"></path></svg><div class="MuiBox-root jss328">Assessment</div></div><div class="MuiBox-root jss329" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 4h-4.2c-.4-1.2-1.5-2-2.8-2s-2.4.8-2.8 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-7 0c.6 0 1 .5 1 1 0 .6-.4 1-1 1-.5 0-1-.4-1-1 0-.5.5-1 1-1zm2 14.7H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7v-2h10v2z"></path></svg><div class="MuiBox-root jss330">Assignment</div></div><div class="MuiBox-root jss331" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.9 20.5c-1.1 0-2.1-.4-2.9-1.2L6.4 11c-.5-.5-.7-1.1-.7-1.8S6 8 6.5 7.5c1-1 2.6-1 3.6 0l6.2 5.9c.4.4.4 1 0 1.4-.4.4-1 .4-1.4 0L8.7 8.9c-.2-.2-.6-.2-.9 0-.1.1-.1.3-.1.4 0 .1 0 .2.1.4l8.5 8.3c.8.8 2.2.8 3 0 .8-.8.8-2.1 0-2.9l-8.9-8.8C9 4.8 6.6 4.8 5.1 6.2c-1.5 1.5-1.5 3.9 0 5.4l6.7 6.9c.4.4.4 1 0 1.4-.4.4-1 .4-1.4 0L3.6 13c-2.2-2.3-2.2-5.9.1-8.2 2.2-2.2 5.9-2.3 8.2 0l8.9 8.7c1.6 1.6 1.6 4.2 0 5.8-.8.8-1.9 1.2-2.9 1.2z"></path></svg><div class="MuiBox-root jss332">AttachFile</div></div><div class="MuiBox-root jss333" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.9 22.7c-.1 0-.3 0-.4-.1-.4-.2-.6-.5-.6-.9v-7.5L6.7 19c-.4.4-1 .4-1.4 0-.4-.4-.4-1 0-1.4l6-5.6-6-5.5c-.4-.4-.4-1.1 0-1.5.4-.4 1-.4 1.4-.1l5.2 4.7V2c0-.4.2-.8.6-.9.4-.2.8-.1 1.1.2l5.1 5.1c.2.2.3.5.3.7 0 .3-.1.5-.3.7l-4.4 4.1 4.4 4c.2.2.3.4.3.7 0 .3-.1.5-.3.7l-5.1 5.1c-.2.2-.5.3-.7.3zm1-8.5v5.1l2.7-2.7-2.7-2.4zm0-9.8v5.2l2.7-2.5-2.7-2.7z"></path></svg><div class="MuiBox-root jss334">Bluetooth</div></div><div class="MuiBox-root jss335" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 5v6.59l-3-3.01-4 4.01-4-4-4 4-3-3.01V5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2zm-3 6.42l3 3.01V19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2v-6.58l3 2.99 4-4 4 4 4-3.99z"></path></svg><div class="MuiBox-root jss336">BrokenImage</div></div><div class="MuiBox-root jss337" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 10c0-1.7-1.3-3-3-3s-3 1.3-3 3 1.3 3 3 3 3-1.3 3-3zm-4 0c0-.6.4-1 1-1s1 .4 1 1-.4 1-1 1-1-.4-1-1zm7.5 10.2h-2.7l-.9-2.8c3-1.2 5.1-4.1 5.1-7.5 0-4.4-3.6-8-8-8s-8 3.6-8 8c0 3.4 2.1 6.3 5.1 7.5l-.9 2.8H5.5c-.6 0-1 .4-1 1s.4 1 1 1h12.9c.6 0 1-.4 1-1s-.3-1-.9-1zM6 10c0-3.3 2.7-6 6-6s6 2.7 6 6-2.7 6-6 6-6-2.7-6-6zm4.3 10.2l.8-2.3c.3 0 .6.1.9.1s.6 0 .9-.1l.8 2.3h-3.4z"></path></svg><div class="MuiBox-root jss338">Camera</div></div><div class="MuiBox-root jss339" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"></path></svg><div class="MuiBox-root jss340">Cancel</div></div><div class="MuiBox-root jss341" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path></svg><div class="MuiBox-root jss342">Check</div></div><div class="MuiBox-root jss343" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.8 18c-.3 0-.5-.1-.7-.3l-8.8-9c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0l8.1 8.3 8.4-8.3c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4l-9.2 9c0 .2-.3.3-.6.3z"></path></svg><div class="MuiBox-root jss344">ChevronDown</div></div><div class="MuiBox-root jss345" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path></svg><div class="MuiBox-root jss346">ChevronLeft</div></div><div class="MuiBox-root jss347" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg><div class="MuiBox-root jss348">ChevronRight</div></div><div class="MuiBox-root jss349" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18c-.3 0-.5-.1-.7-.3-.4-.4-.4-1 0-1.4l8.8-9c.2-.2.5-.3.7-.3.3 0 .5.1.7.3l9.2 9c.4.4.4 1 0 1.4-.4.4-1 .4-1.4 0l-8.4-8.3-8.1 8.3c-.3.2-.5.3-.8.3z"></path></svg><div class="MuiBox-root jss350">ChevronUp</div></div><div class="MuiBox-root jss351" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.6 9.4c.2-1.4 1.1-2.3 1.9-2.2.8.1 1.3 1.2 1.2 2.4l-1.3.3.9 1.1c-.4.8-1 1.3-1.6 1.2-.8-.2-1.3-1.4-1.1-2.8M8 8.7L6.7 9l.9 1c-.4.8-1 1.3-1.6 1.2-.8-.1-1.4-1.3-1.2-2.7.2-1.4 1.1-2.3 1.9-2.2.9.1 1.4 1.1 1.3 2.4m9.9 10.1c1.7-1.2 3-2.8 3.7-4.7-.1.1-.2.2-.3.2-.9.8-1.9 1.4-3 1.8-.8.3-1.5.5-2.1.6-.2.6-.7 1-1.4 1-.8 0-1.4-.6-1.4-1.4 0-.8.6-1.4 1.4-1.4.5 0 1 .3 1.2.7.6-.1 1.2-.3 1.8-.5 1.7-.7 3-1.7 4.1-3.2v-.5C22 6.2 17.5 2 12 2S2 6.2 2 11.3s4.5 9.3 10 9.3c.9 0 1.7-.1 2.5-.3 1 .8 2.9 1.7 6.1 1.7 0 0-2.2-1.1-2.7-3.2"></path></svg><div class="MuiBox-root jss352">ClientService</div></div><div class="MuiBox-root jss353" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg><div class="MuiBox-root jss354">Close</div></div><div class="MuiBox-root jss355" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.2 8.1c-.5-1.2-1.2-2.3-2.1-3.2s-2-1.6-3.2-2.1S13.4 2 12 2s-2.7.3-3.9.8S5.8 4 4.9 4.9s-1.6 2-2.1 3.2S2 10.6 2 12s.3 2.7.8 3.9 1.2 2.3 2.1 3.2 2 1.6 3.2 2.1 2.5.8 3.9.8 2.7-.3 3.9-.8 2.3-1.2 3.2-2.1 1.6-2 2.1-3.2.8-2.5.8-3.9-.3-2.7-.8-3.9zm-5.1 7c.1.1.2.3.2.5s-.1.4-.2.5-.3.2-.5.2-.4-.1-.5-.2L12 13l-3.1 3.1c-.1.1-.3.2-.5.2s-.4 0-.5-.2-.2-.3-.2-.5.1-.4.2-.5L11 12 7.9 8.9c-.2-.1-.2-.3-.2-.5s0-.4.2-.5.3-.2.5-.2.4.1.5.2L12 11l3.1-3.1c.1-.1.3-.2.5-.2s.4.1.5.2.2.3.2.5-.1.4-.2.5L13 12l3.1 3.1z"></path></svg><div class="MuiBox-root jss356">CloseCircle</div></div><div class="MuiBox-root jss357" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"></path></svg><div class="MuiBox-root jss358">CloudUpload</div></div><div class="MuiBox-root jss359" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.5 7.1c-.8 0-1.5.7-1.5 1.5 0 .4.2.8.4 1.1L16 12.3l-3.5-6.4c.5-.2.9-.8.9-1.4.1-.8-.6-1.5-1.4-1.5s-1.5.7-1.5 1.5c0 .6.4 1.1.9 1.4l-3.5 6.4-4.3-2.6c.2-.3.4-.7.4-1.1 0-.8-.7-1.5-1.5-1.5S1 7.8 1 8.6s.7 1.5 1.5 1.5h.2L5 17.8l.1.1s0 .1.1.1.1.1.2.1h13.3c.1 0 .1 0 .2-.1l.1-.1.1-.1 2.2-7.8h.2c.8 0 1.5-.7 1.5-1.5 0-.7-.7-1.4-1.5-1.4zm-3 12.7h-13c-.3 0-.6.3-.6.6s.3.6.6.6h13c.3 0 .6-.3.6-.6 0-.4-.2-.6-.6-.6z"></path></svg><div class="MuiBox-root jss360">Crown</div></div><div class="MuiBox-root jss361" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12zm3-4C8.67 8 8 7.33 8 6.5S8.67 5 9.5 5s1.5.67 1.5 1.5S10.33 8 9.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 5 14.5 5s1.5.67 1.5 1.5S15.33 8 14.5 8zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 9 17.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"></path></svg><div class="MuiBox-root jss362">ColorLens</div></div><div class="MuiBox-root jss363" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"></path></svg><div class="MuiBox-root jss364">ArrowForwardIos</div></div><div class="MuiBox-root jss365" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"></path></svg><div class="MuiBox-root jss366">Code</div></div><div class="MuiBox-root jss367" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 3h-8c0-.6-.4-1-1-1s-1 .4-1 1H3c-.6 0-1 .4-1 1s.4 1 1 1h1v15c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V5h1c.6 0 1-.4 1-1s-.4-1-1-1zm-3 17H6V5h12v15zM7.2 17V9c0-.6.4-1 1-1s1 .4 1 1v8c0 .6-.4 1-1 1s-1-.4-1-1zm3.8 0V9c0-.6.4-1 1-1s1 .4 1 1v8c0 .6-.4 1-1 1s-1-.4-1-1zm4 0V9c0-.6.4-1 1-1s1 .4 1 1v8c0 .6-.4 1-1 1s-1-.4-1-1z"></path></svg><div class="MuiBox-root jss368">Delete</div></div><div class="MuiBox-root jss369" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.71 11.29l-9-9a.9959.9959 0 00-1.41 0l-9 9c-.39.39-.39 1.02 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9c.39-.38.39-1.01 0-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"></path></svg><div class="MuiBox-root jss370">Directions</div></div><div class="MuiBox-root jss371" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 13c-.3 0-.5-.1-.7-.3L4.9 6.3c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0l5.7 5.7 5.6-5.7c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4l-6.3 6.4c-.2.2-.4.3-.7.3zm0 7c.3 0 .5-.1.7-.3l6.3-6.4c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0L12 17.6l-5.7-5.7c-.4-.4-1-.4-1.4 0s-.4 1 0 1.4l6.4 6.4c.2.2.4.3.7.3z"></path></svg><div class="MuiBox-root jss372">DoubleArrowDown</div></div><div class="MuiBox-root jss373" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M5.6 19.4c-.3 0-.6-.1-.8-.3-.4-.4-.4-1 0-1.4l6.4-6.4c.3-.2.5-.3.8-.3.3 0 .5.1.7.3l6.3 6.4c.4.4.4 1 0 1.4-.4.4-1 .4-1.4 0L12 13.4l-5.7 5.7c-.2.2-.5.3-.7.3zM19 12.1c.4-.4.4-1 0-1.4l-6.3-6.4c-.2-.2-.4-.3-.7-.3-.3 0-.5.1-.7.3l-6.4 6.4c-.4.4-.4 1 0 1.4.4.4 1 .4 1.4 0L12 6.4l5.6 5.7c.2.2.5.3.7.3.2 0 .5-.1.7-.3z"></path></svg><div class="MuiBox-root jss374">DoubleArrowUp</div></div><div class="MuiBox-root jss375" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 14v6c0 .6-.4 1-1 1H3c-.6 0-1-.4-1-1v-6c0-.6.4-1 1-1s1 .4 1 1v5h16v-5c0-.6.4-1 1-1s1 .4 1 1zm-10.6.7c.2.2.4.3.7.3.2 0 .5-.1.7-.3l4-3.7c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0L13 11.7V4c0-.6-.4-1-1-1s-1 .4-1 1v7.7L8.7 9.6c-.4-.4-1-.3-1.4.1-.4.4-.3 1 .1 1.4l4 3.6z"></path></svg><div class="MuiBox-root jss376">Download</div></div><div class="MuiBox-root jss377" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path></svg><div class="MuiBox-root jss378">Edit</div></div><div class="MuiBox-root jss379" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.6 13.4c.2.2.6.2.9 0l9.4-8.5c.1-.4.1-.9-.6-.9H2.7c-.5 0-.9.5-.6.9l9.5 8.5zM22 8.2c0-.4-.5-.6-.8-.4l-7.4 6.6c-.5.4-1.1.7-1.8.7s-1.3-.2-1.8-.6L2.9 7.8c-.3-.3-.8-.1-.8.4v10.2c0 .6.4 1 1 1h18c.6 0 1-.4 1-1V8.2z"></path></svg><div class="MuiBox-root jss380">Email</div></div><div class="MuiBox-root jss381" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"></path></svg><div class="MuiBox-root jss382">Error</div></div><div class="MuiBox-root jss383" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M17 15.7c.1.8 1.1.6 1.9.9-1.5 2.3-4 3.8-6.9 3.8-4.6 0-8.3-3.7-8.3-8.3S7.4 3.7 12 3.7c.4 0 .8 0 1.2.1-.8.9-1.4 1.5-1.9 1.9-.8.6-.5 1.5.6 2.3s2 1.1 2.2.1c.1-1 .1-1.8.6-2.5.3-.3.6-.8.9-1 .3.1.5.3.8.4-.1.2-.3.3-.4.4-.4.3-.5.9-.3 1.3.2.5 2.1-.2 2.1.2 0 .5-1.8-.1-2.1 1-.3 1.1 0 1.1-1.5 1.5-1.5.3-2.4-.3-3.8 1s-1.7 1.1-1.6 2.4c.1 1.2-.5 1.1-1.2 1.1s-1.1 0-1.1 1.1.1 1.5 1.1 1.4c1-.1 1.3-1.5 2.5-2.1 1.2-.5 2.3-.6 3 .3.6.9 2.2 1 2.8.7.6-.3 1.6-2.9 2.7-2.8.4.1 1.1.3 1.6.6-.1.5-.2.9-.3 1.3h-.1c-1.3 0-2.9.3-2.8 1.3zM1 12c0 6.1 4.9 11 11 11s11-4.9 11-11S18.1 1 12 1 1 5.9 1 12z"></path></svg><div class="MuiBox-root jss384">Europe</div></div><div class="MuiBox-root jss385" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"></path></svg><div class="MuiBox-root jss386">ExpandLess</div></div><div class="MuiBox-root jss387" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg><div class="MuiBox-root jss388">ExpandMore</div></div><div class="MuiBox-root jss389" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 14v6c0 .6-.4 1-1 1H3c-.6 0-1-.4-1-1v-6c0-.6.4-1 1-1s1 .4 1 1v5h16v-5c0-.6.4-1 1-1s1 .4 1 1zM8 8.7c.2 0 .5-.1.7-.3L11 6.3V14c0 .6.4 1 1 1s1-.4 1-1V6.3l2.3 2.2c.4.4 1 .4 1.4 0 .4-.4.4-1 0-1.4l-4-3.7c-.4-.4-1-.4-1.4 0L7.3 7c-.4.3-.4 1 0 1.4.2.2.4.3.7.3z"></path></svg><div class="MuiBox-root jss390">Export</div></div><div class="MuiBox-root jss391" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm-1 4l6 6v10c0 1.1-.9 2-2 2H7.99C6.89 23 6 22.1 6 21l.01-14c0-1.1.89-2 1.99-2h7zm-1 7h5.5L14 6.5V12z"></path></svg><div class="MuiBox-root jss392">FileCopy</div></div><div class="MuiBox-root jss393" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4c.6 0 1 .5 1 1 0 .6-.4 1-1 1-.5 0-1-.4-1-1 0-.5.5-1 1-1zm-.8 5.5c-.8 0-1.6.3-2.2.9-1.2 1.2-1.2 3.2 0 4.4 1.2 1.2 3.2 1.2 4.4 0 1.2-1.2 1.2-3.2 0-4.4-.5-.6-1.3-1-2.2-.9zm3.9 5.8l2 2-1.2 1.2-2-2c-1.3.9-3 1.1-4.5.5-2.1-.9-3.3-3.1-2.8-5.3S9 7.9 11.2 7.9c1.2 0 2.4.5 3.3 1.4 1.6 1.5 1.9 4 .6 6 0-.1 0-.1 0 0zM19 4h-4.2c-.4-1.2-1.5-2-2.8-2s-2.4.8-2.8 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2z"></path></svg><div class="MuiBox-root jss394">FindInPage</div></div><div class="MuiBox-root jss395" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path></svg><div class="MuiBox-root jss396">GetApp</div></div><div class="MuiBox-root jss397" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.9 17.2c0 .6-.4 1-1 1s-1-.4-1-1 .4-1 1-1 1 .5 1 1zm3-1c-.6 0-1 .4-1 1s.4 1 1 1 1-.4 1-1-.5-1-1-1zm4 0c-.6 0-1 .4-1 1s.4 1 1 1 1-.4 1-1-.5-1-1-1zM22 6v12c0 2.2-1.8 4-4 4H6c-2.2 0-4-1.8-4-4V6c0-2.2 1.8-4 4-4h12c2.2 0 4 1.8 4 4zm-2 0c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V6z"></path></svg><div class="MuiBox-root jss398">Getaway</div></div><div class="MuiBox-root jss399" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2zm2.8 5c-.8-.6-1.7-1-2.8-1s-2 .4-2.8 1C8.4 7.7 8 8.7 8 9.7v.2c0 .1.1.2.2.2h1.2c.1 0 .2-.1.2-.2v-.2c0-1.1 1.1-2 2.4-2s2.4.9 2.4 2c0 .8-.6 1.5-1.4 1.9-.5.2-1 .6-1.3 1-.3.5-.5 1.1-.5 1.7v.5c0 .1.1.2.2.2h1.2c.1 0 .2-.1.2-.2v-.6c0-.5.3-1 .8-1.1 1.4-.6 2.4-1.9 2.4-3.4 0-1-.4-2-1.2-2.7zM11 17c0 .6.4 1 1 1s1-.4 1-1-.4-1-1-1-1 .4-1 1z"></path></svg><div class="MuiBox-root jss400">Help</div></div><div class="MuiBox-root jss401" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M14.59 8L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path></svg><div class="MuiBox-root jss402">HighlightOff</div></div><div class="MuiBox-root jss403" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm1 15c0 .5-.4.8-.8.8h-.3c-.5 0-.8-.4-.8-.8v-6.3c0-.5.4-.8.8-.8h.3c.5 0 .8.4.8.8V17zm-.3-9.5c-.2.2-.4.3-.7.3-.3 0-.5-.1-.7-.3-.2-.2-.3-.5-.3-.7 0-.3.1-.5.3-.7.2-.2.4-.3.7-.3.3 0 .5.1.7.3.2.2.3.4.3.7 0 .2-.1.5-.3.7z"></path></svg><div class="MuiBox-root jss404">Info</div></div><div class="MuiBox-root jss405" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"></path></svg><div class="MuiBox-root jss406">KeyboardArrowLeft</div></div><div class="MuiBox-root jss407" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg><div class="MuiBox-root jss408">KeyboardArrowRight</div></div><div class="MuiBox-root jss409" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"></path></svg><div class="MuiBox-root jss410">Lock</div></div><div class="MuiBox-root jss411" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 10.3V5.5C16.4 3 14.4 1 12 1S7.6 3 7.6 5.5v4.9C6 11.6 5 13.6 5 15.9c0 3.9 3.1 7.1 7 7.1s7-3.2 7-7.1c0-2.3-1-4.3-2.6-5.6zM9.2 5.5c0-1.6 1.2-2.8 2.8-2.8 1.5 0 2.8 1.3 2.8 2.8v3.9c-.9-.4-1.8-.6-2.8-.6s-1.9.2-2.8.5V5.5zm3.7 11.9c0 .5-.4.9-.9.9s-.9-.4-.9-.9v-2.8c0-.5.4-.9.9-.9s.9.4.9.9v2.8z"></path></svg><div class="MuiBox-root jss412">LockOutline</div></div><div class="MuiBox-root jss413" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg><div class="MuiBox-root jss414">Menu</div></div><div class="MuiBox-root jss415" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M17 11.8c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5c-.1.8-.7 1.5-1.5 1.5zm-4.9 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm-4.8 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zM20.9 3H3.1C2.5 3 2 3.5 2 4.1v12.2c0 .6.5 1.1 1.1 1.1h2.6V21l6.8-3.6h8.3c.6 0 1.1-.5 1.1-1.1V4.1c.1-.6-.4-1.1-1-1.1z"></path></svg><div class="MuiBox-root jss416">Message</div></div><div class="MuiBox-root jss417" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 2.5C8.2 1.5 10 1 12 1s3.8.5 5.5 1.5c1.7 1 3 2.3 4 4C22.5 8.2 23 10 23 12s-.5 3.8-1.5 5.5c-1 1.7-2.3 3-4 4-1.7 1-3.5 1.5-5.5 1.5s-3.8-.5-5.5-1.5c-1.7-1-3-2.3-4-4C1.5 15.8 1 14 1 12s.5-3.8 1.5-5.5c1-1.7 2.3-3 4-4zm9.4 6l-.1.1s-.1.1-.2.1l.1-.1s0-.1.1-.2c0-.1 0-.1.1-.1.1-.1.2-.1.3-.2.1-.1.4-.1.7-.2.3-.1.6 0 .7.2 0 0 0-.1.1-.2l.2-.2s.1 0 .2-.1c.1 0 .2-.1.2-.1v-.3c-.1 0-.2 0-.3-.1.1.1 0 0 0-.2 0 0 0 .1-.1.1 0-.1 0-.1-.1-.1H17.5c-.1 0-.2-.1-.2-.1s-.1-.1-.1-.2 0-.2-.1-.2c0 0-.1-.1-.1-.2l-.1-.1V6v-.1s0-.1-.1-.1h-.1s-.1 0-.1.1l-.1.1-.1.1h-.1-.1-.1s-.1 0-.1.1h-.2c.1 0 .1-.1 0-.2-.1 0-.2-.1-.2 0 .1 0 .1-.1.1-.2s-.1-.1-.1-.2h.1l-.1-.1c-.1 0-.2-.1-.3-.1-.1 0-.2-.1-.2-.1-.1 0-.2-.1-.5-.1h-.5c0 .1-.1.1-.1.2 0 0 0 .1.1.2 0 .1.1.2.1.2 0 .1 0 .1-.1.2s-.1.1-.1.2.1.1.2.2.2.2.1.3c0 .1-.1.2-.2.2S14 7 14 7c0 .1-.1.2 0 .3s.1.2.2.2v.1l-.1.1s-.1 0-.1.1c0 0-.1 0-.1.1-.1 0-.2 0-.3-.1-.1-.1-.2-.2-.2-.4-.1-.2-.1-.4-.2-.4-.2-.1-.4-.1-.4 0 0-.1-.2-.2-.6-.4-.2-.1-.5-.1-.8-.1.1 0 .1-.1 0-.2s-.2-.2-.3-.2c0-.1 0-.1.1-.3v-.2c0-.1.1-.2.2-.3 0 0 0-.1.1-.1.1-.1.1-.1.1-.2v-.1c.3 0 .6 0 .7-.2l.2-.2c.1-.1.1-.2.2-.2.1-.1.2-.1.2-.1s.1 0 .2.1c.1 0 .2.1.2.1.1 0 .2 0 .2-.2 0-.1 0-.2-.1-.3.1 0 .1-.1 0-.2 0-.1-.1-.1-.1-.1-.1 0-.2 0-.4.1-.1 0-.1.1 0 .1 0 0-.1 0-.1.2s-.2.2-.2.3c-.1.1-.2 0-.2-.1 0 0 0-.1-.1-.2 0-.1-.1-.2-.1-.2-.1 0-.2.1-.2.2 0-.1 0-.1-.2-.2s-.2-.1-.3-.1c.2-.1.1-.2-.1-.4-.1 0-.2-.1-.3-.1-.1 0-.2 0-.3.1 0 .1-.1.1-.1.2 0 0 0 .1.1.1s.1.1.2.1c0 0 .1 0 .2.1h.1c.1.1.2.2.1.2 0 0-.1 0-.1.1-.1 0-.1 0-.2.1 0 0-.1 0-.1.1v.4s-.1-.1-.1-.3c0-.1-.1-.2-.1-.2-.2-.2-.3-.2-.6-.2H10h-.5c-.1 0-.1 0-.2-.1v-.3h.1s-.1-.1-.2-.1c0-.1-.1-.1-.1-.2-.5.2-.9.4-1.4.6h.2s.1-.1.2-.1.1-.1.1-.1c.3-.1.5-.2.6-.1l.1-.1c.1.2.2.3.3.4h-.4c-.2.1-.3.1-.4.2.1.1.1.2.1.3 0 0-.1-.1-.2-.1 0-.2-.1-.2-.2-.3h-.5c-1.4.8-2.5 1.8-3.4 3.2.1.1.1.1.2.1l.1.1v.2h.2c.1.1.1.2 0 .3 0 0 .2.1.6.4l.3.3c0 .1 0 .2-.1.3l-.1-.1c-.1-.2-.1-.3-.1-.2v.3c0 .1.1.1.1.1s-.1.1-.1.2v.8c0 .1 0 .3.1.5s.2.3.3.3c-.1 0 0 .2.3.6v.2s.1.1.2.1c.1.1.2.1.2.1.1 0 .1.1.1.2 0 0 .1.2.1.3.1.2.1.3.2.3 0 .1 0 .2.1.3.1.1.2.2.2.3 0 .1.1.1.2.2s.2.1.2.2V13.9h.1c0-.2-.1-.5-.3-.9l-.2-.4s-.1-.1-.1-.2 0-.2-.1-.2H7s.1 0 .1.1c0 0 .1 0 .1.1v.3c0 .1.1.2.2.3s.1.2.2.3.4.2.4.2c.1.1.1.2.2.3.1.1.1.2 0 .2.1 0 .2.1.3.2.1.1.2.2.2.3 0 .1.1.2.1.4s.1.3.1.3c0 .1.1.1.1.2.1.1.1.1.2.1s.1.1.2.1.2.1.2.1.1.1.3.2c.1.1.2.1.3.2.1 0 .2.1.2.1h.2c.1 0 .1 0 .2-.1.1 0 .3.1.4.2.1.2.2.3.3.3.3.2.6.2.8.2v.1c0 .1.1.1.1.2.1.1.1.2.1.2 0 .1.1.1.1.1 0 .1.1.1.3.2.1.1.2.2.3.2.1 0 .1-.1.1-.1 0 .1 0 .2.1.3.1.1.2.2.3.1.1 0 .2-.2.2-.5-.3.1-.5.1-.7-.3v-.1s0-.1-.1-.1V17v-.1h.1c.1 0 .1 0 .1-.1v-.2c0-.1 0-.1-.1-.2 0-.1-.1-.2-.2-.3l-.2-.2c0 .1-.1.1-.2.1s-.2-.1-.2-.1v.2h-.2v-.3c0-.1 0-.2.1-.3 0 0 0-.1.1-.2 0-.1.1-.1.1-.2s0-.1.1-.2c0-.1 0-.1-.1-.1h-.3c-.2 0-.3.1-.4.3v.2c0 .1 0 .1-.1.2l-.1.1h-.3c-.2 0-.3 0-.3-.1-.1-.1-.2-.2-.3-.4-.1-.2-.1-.4-.1-.5v-.4-.4c0-.1 0-.2-.1-.3l.1-.1c.1-.1.1-.1.1-.2H11v-.1h-.1-.1.8c.1.1.2.1.3 0V13v-.2c0 .3.2.3.4.1 0 0 .1.1.2.1s.2 0 .3.1c0 0 .1 0 .1.1l.1.1h.1s.1 0 .1-.1c.1.1.2.2.2.3.1.4.2.6.3.6h.2l.1-.1v-.2V13.1c-.1 0-.2-.1-.3-.2v-.3c0-.1.1-.2.2-.3l.1-.1c.1 0 .1-.1.2-.1s.1-.1.2-.1c.2-.2.3-.3.2-.5.1 0 .1 0 .2-.1h-.1l-.1-.1h-.1c.1 0 .1-.1 0-.2 0 0 .1-.1.1-.2s.1-.1.1-.1c.1.1.2.1.3 0 .1-.1.1-.2 0-.2 0-.1.1-.1.3-.2.1 0 .2-.1.3-.1h.1v-.2-.2s.1-.1.2-.1.2-.1.2-.1l.2-.2v-.1c.2 0 .3 0 .4-.2.1-.1.1-.2-.1-.3v-.1c-.1 0-.1-.1-.2-.1h.4c.1-.1.1-.2-.1-.2-.3-.3-.5-.2-.8 0zM13.6 21c2-.3 3.6-1.2 5-2.7 0 0-.1-.1-.2-.1s-.2 0-.2-.1c-.2-.1-.3-.1-.3-.1v-.2c0-.1-.1-.1-.1-.1s-.1-.1-.2-.1-.1-.1-.2-.1c0 0-.1 0-.1-.1l-.1-.1s-.1 0-.1-.1H17h-.1-.1-.1-.1c-.2-.2-.4-.3-.5-.3 0 0-.1 0-.2-.1-.1 0-.1-.1-.2-.1h-.1c-.1 0-.1 0-.2.1 0 0-.1.1-.1.2v.2c-.1 0-.1-.1 0-.3.1-.1.1-.2 0-.3 0-.1-.1-.1-.2-.1s-.1 0-.2.1c0 0-.1.1-.2.1l-.1.1s-.1 0-.1.1c-.1 0-.1.1-.1.1s-.1.1-.1.2-.1.1-.1.2c0 0-.1-.1-.2-.1s-.1-.1-.1-.1c0 .1 0 .3.1.5 0 .2 0 .4.1.5.1.3 0 .5-.2.7-.3.2-.4.4-.4.6 0 .2 0 .3.2.4 0 .1 0 .2-.1.3-.1.1-.1.2-.1.3.1.3.1.4.1.5z"></path></svg><div class="MuiBox-root jss418">NorthAmerica</div></div><div class="MuiBox-root jss419" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.1 2h-5.3C14.3 2 13 3.3 13 4.9v5.3c0 .6.4.9.9.9h5.3c1.6 0 2.9-1.3 2.9-2.9V2.9c-.1-.5-.5-.9-1-.9zm-13 0H2.9c-.5 0-.9.4-.9.9v5.3C2 9.7 3.3 11 4.9 11h5.3c.6 0 .9-.4.9-.9V4.9c0-1.6-1.2-2.9-3-2.9zm5.8 10.9h5.3c1.6 0 2.9 1.3 2.9 2.9V21c0 .6-.4.9-.9.9h-5.3c-1.6 0-2.9-1.3-2.9-2.9v-5.3c-.1-.4.3-.8.9-.8zm-9 .1h5.3c.6 0 .9.4.9.9v5.3c0 1.6-1.3 2.9-2.9 2.9H2.9c-.5-.1-.9-.5-.9-1v-5.3C2 14.3 3.3 13 4.9 13z"></path></svg><div class="MuiBox-root jss420">Overview</div></div><div class="MuiBox-root jss421" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"></path></svg><div class="MuiBox-root jss422">Pause</div></div><div class="MuiBox-root jss423" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path></svg><div class="MuiBox-root jss424">Person</div></div><div class="MuiBox-root jss425" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 1c5.5 0 10 4.5 10 9.9H13V1zm-1 1.2c-5.5 0-10 4.5-10 9.9S6.5 22 12 22s10-4.5 10-9.9H12V2.2z"></path></svg><div class="MuiBox-root jss426">PieChart</div></div><div class="MuiBox-root jss427" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg><div class="MuiBox-root jss428">PlayArrow</div></div><div class="MuiBox-root jss429" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7.9l8.3 3.6V22L4 18.7c-.6-.3-1-.9-1-1.6V7.9zm18-.3v9.5c0 .7-.4 1.3-1 1.6l-7 3.1V11.4l8-3.8zm-8.3-5.5L20 5.4c.3.1.5.3.6.5l-8.6 4-8.8-3.8c.2-.3.5-.5.8-.7l7.3-3.3c.5-.1.9-.1 1.4 0z"></path></svg><div class="MuiBox-root jss430">Policy</div></div><div class="MuiBox-root jss431" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 7H2V4c0-.6.4-1 1-1h18c.6 0 1 .4 1 1v3zm0 2v11c0 .6-.4 1-1 1H3c-.6 0-1-.4-1-1V9h20zm-11 5v-2.5L6.5 16H17v-2h-6z"></path></svg><div class="MuiBox-root jss432">Refunded</div></div><div class="MuiBox-root jss433" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9c0-.6.4-1 1-1h15.7l-4-4.3c-.4-.4-.3-1 .1-1.4.4-.4 1-.3 1.4.1l5.5 6c.3.2.4.6.2 1-.1.4-.5.6-.9.6H3c-.6 0-1-.4-1-1zm19 5H3c-.4 0-.8.2-.9.6s-.1.8.2 1.1l5.5 6c.1.2.4.3.7.3.2 0 .5-.1.7-.3.4-.4.4-1 .1-1.4l-4-4.3H21c.6 0 1-.4 1-1s-.4-1-1-1z"></path></svg><div class="MuiBox-root jss434">Repeat</div></div><div class="MuiBox-root jss435" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 13H5v-2h14v2z"></path></svg><div class="MuiBox-root jss436">Remove</div></div><div class="MuiBox-root jss437" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg><div class="MuiBox-root jss438">Search</div></div><div class="MuiBox-root jss439" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M10.9 15.3l-4.2-3.8 1.5-1.3 2.7 2.5 5.7-5.1L18 8.9l-7.1 6.4zM11.8 2L3.3 5.3v6.6c0 4.5 3 8.2 7.5 9.9 1 .4 1 .4 2 0 4.4-1.6 7.5-5.4 7.5-9.9V5.3L11.8 2z"></path></svg><div class="MuiBox-root jss440">SecuritySuccess</div></div><div class="MuiBox-root jss441" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20H5V4h7c.6 0 1-.4 1-1s-.4-1-1-1H4c-.6 0-1 .4-1 1v18c0 .6.4 1 1 1h8c.6 0 1-.4 1-1s-.4-1-1-1z"></path><path d="M20.7 11.4l-3.7-4c-.4-.4-1-.4-1.4-.1-.4.4-.4 1-.1 1.4l2.1 2.3H9c-.6 0-1 .4-1 1s.4 1 1 1h8.7l-2.2 2.3c-.4.4-.4 1 0 1.4.2.2.4.3.7.3.3 0 .5-.1.7-.3l3.7-4c.5-.4.5-.9.1-1.3z"></path></svg><div class="MuiBox-root jss442">SignOut</div></div><div class="MuiBox-root jss443" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.1 2H2.9c-.5 0-.9.4-.9 1v18c0 .5.4 1 .9 1h18.3c.5 0 .9-.4.9-1V3c-.1-.6-.5-1-1-1m-6.2 10.9l-4.5 2.9c-.7.4-1.3.1-1.3-.8V9.3c0-.9.6-1.2 1.3-.8l4.5 2.9c.7.4.7 1.1 0 1.5"></path></svg><div class="MuiBox-root jss444">StreamMedia</div></div><div class="MuiBox-root jss445" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c1.4 0 2.7.3 3.9.8s2.3 1.2 3.2 2.1 1.6 2 2.1 3.2.8 2.5.8 3.9-.3 2.7-.8 3.9-1.2 2.3-2.1 3.2-2 1.6-3.2 2.1-2.5.8-3.9.8-2.7-.3-3.9-.8-2.3-1.2-3.2-2.1-1.6-2-2.1-3.2S2 13.4 2 12s.3-2.7.8-3.9S4 5.8 4.9 4.9s2-1.6 3.2-2.1S10.6 2 12 2zm5.3 5.5L10 15.2l-3.4-3.6c-.3-.3-.8-.3-1.1 0-.3.3-.3.9 0 1.2l4 4.2c.3.3.8.3 1.1 0l7.8-8.3c.3-.3.3-.9 0-1.2s-.8-.4-1.1 0z"></path></svg><div class="MuiBox-root jss446">Success</div></div><div class="MuiBox-root jss447" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 8l-4-4v3H3v2h15v3l4-4zM2 16l4 4v-3h15v-2H6v-3l-4 4z"></path></svg><div class="MuiBox-root jss448">SyncAlt</div></div><div class="MuiBox-root jss449" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.7 12.7c-.7-.7-1.1-1.6-1.2-2.6H5.8c-2.1 0-3.8 1.7-3.8 3.8V17l.2.1c1.6.5 3 .7 4.2.8V17c.1-2 1.4-3.8 3.3-4.3zM7 9.9c.6 0 1.1-.2 1.5-.5.1-.9.6-1.8 1.4-2.3V7c0-1.6-1.3-3-2.9-3-.8 0-1.5.3-2.1.9-.5.5-.8 1.3-.8 2.1 0 1.6 1.3 2.9 2.9 2.9zm11.3.2h-2.5c0 1-.4 1.9-1.1 2.5 1.9.6 3.2 2.3 3.2 4.3v1c2.4-.1 3.8-.8 3.9-.8l.2-.1v-3.1c.1-2.1-1.6-3.8-3.7-3.8zm-4.9 3.1h-2.5c-2.1 0-3.8 1.7-3.8 3.8v3.1l.2.1c2 .6 3.7.8 5.1.8 2.8 0 4.4-.8 4.5-.8l.2-.1V17c.1-2.1-1.6-3.8-3.7-3.8zm-1.2-.2c1.6 0 2.9-1.3 2.9-3s-1.3-3-2.9-3-2.9 1.3-2.9 3 1.3 3 2.9 3zm1.9-6.1c1 .6 1.6 1.6 1.7 2.7.4.2.8.3 1.3.3.8 0 1.5-.3 2.1-.9.5-.5.8-1.2.8-2 0-1.6-1.3-3-2.9-3-1.7 0-3 1.3-3 2.9z"></path></svg><div class="MuiBox-root jss450">Team</div></div><div class="MuiBox-root jss451" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 22h20v-5.7H2V22zm1.4-4.3h2.9v2.9H3.4v-2.9zM2 14.9h20V9.1H2v5.8zm1.4-4.3h2.9v2.9H3.4v-2.9zM2 2v5.7h20V2H2zm4.3 4.3H3.4V3.4h2.9v2.9z"></path></svg><div class="MuiBox-root jss452">ViewList</div></div><div class="MuiBox-root jss453" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg><div class="MuiBox-root jss454">Visibility</div></div><div class="MuiBox-root jss455" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7c2.76 0 5 2.24 5 5 0 .65-.13 1.26-.36 1.83l2.92 2.92c1.51-1.26 2.7-2.89 3.43-4.75-1.73-4.39-6-7.5-11-7.5-1.4 0-2.74.25-3.98.7l2.16 2.16C10.74 7.13 11.35 7 12 7zM2 4.27l2.28 2.28.46.46C3.08 8.3 1.78 10.02 1 12c1.73 4.39 6 7.5 11 7.5 1.55 0 3.03-.3 4.38-.84l.42.42L19.73 22 21 20.73 3.27 3 2 4.27zM7.53 9.8l1.55 1.55c-.05.21-.08.43-.08.65 0 1.66 1.34 3 3 3 .22 0 .44-.03.65-.08l1.55 1.55c-.67.33-1.41.53-2.2.53-2.76 0-5-2.24-5-5 0-.79.2-1.53.53-2.2zm4.31-.78l3.15 3.15.02-.16c0-1.66-1.34-3-3-3l-.17.01z"></path></svg><div class="MuiBox-root jss456">VisibilityOff</div></div><div class="MuiBox-root jss457" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M.7 19.5L11.2 3c.3-.5.9-.6 1.4-.3l.3.3 10.4 16.5c.3.5.2 1.1-.3 1.4-.2.1-.3.2-.5.2H1.6c-.6 0-1-.4-1-1 0-.3 0-.5.1-.6zm10.5-7.3v6h2v-6h-2zm0-3.7v2h2v-2h-2z"></path></svg><div class="MuiBox-root jss458">Warning</div></div><div class="MuiBox-root jss459" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.9 11.4h-7c-.5 0-.9-.4-.9-.9v-7c0-.5.4-.9.9-.9h7c.5 0 .9.4.9.9v7c0 .6-.4.9-.9.9zm0 10.6h-7c-.5 0-.9-.4-.9-.9v-7c0-.5.4-.9.9-.9h7c.5 0 .9.4.9.9v7c0 .5-.4.9-.9.9zM18 11.9c-.3.3-.9.3-1.2 0L12 7.2c-.3-.3-.3-.9 0-1.2l4.7-4.7c.3-.3.9-.3 1.2 0L22.8 6c.3.3.3.9 0 1.2L18 11.9zM20.5 22h-7c-.5 0-.9-.4-.9-.9v-7c0-.5.4-.9.9-.9h7c.5 0 .9.4.9.9v7c0 .5-.4.9-.9.9z"></path></svg><div class="MuiBox-root jss460">Widgets</div></div><div class="MuiBox-root jss461" align="center"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.7 9c-.2.3-.5.4-.8.4-.2 0-.4-.1-.6-.2C18.6 7.1 15.4 6 12 6 8.6 6 5.4 7.1 2.8 9.2c-.5.3-1.1.3-1.4-.2-.4-.4-.3-1 .1-1.4C4.5 5.2 8.2 4 12 4s7.5 1.3 10.5 3.6c.4.4.5 1 .2 1.4zM12 8.6c-2.6 0-5 .8-7 2.4-.4.3-.5 1-.2 1.4.3.4 1 .5 1.4.2 1.7-1.3 3.7-2 5.8-2 2.1 0 4.1.7 5.8 2 .2.1.4.2.6.2.3 0 .6-.1.8-.4.3-.4.3-1.1-.2-1.4-2-1.6-4.4-2.4-7-2.4zm-3.8 5.9c-.4.3-.5 1-.2 1.4.3.4 1 .5 1.4.2 1.5-1.2 3.7-1.2 5.2 0 .2.1.4.2.6.2.3 0 .6-.1.8-.4.3-.4.3-1.1-.2-1.4-2.2-1.8-5.4-1.8-7.6 0zM12 18c-.6 0-1 .4-1 1s.4 1 1 1 1-.4 1-1-.4-1-1-1z"></path></svg><div class="MuiBox-root jss462">Wifi</div></div></div></div><button class="MuiButtonBase-root MuiIconButton-root jss124 open" tabindex="0" type="button"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"></path></svg></span></button><button class="MuiButtonBase-root MuiIconButton-root jss125" tabindex="0" type="button"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 4h-4.2c-.4-1.2-1.5-2-2.8-2s-2.4.8-2.8 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-7 0c.6 0 1 .5 1 1 0 .6-.4 1-1 1-.5 0-1-.4-1-1 0-.5.5-1 1-1zm2 14.7H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7v-2h10v2z"></path></svg></span></button><div class="jss126 open" style="position:relative;text-align:left;box-sizing:border-box;padding:0;overflow:hidden;white-space:pre;font-family:&quot;Jetbrains Mono&quot;, &quot;Fira Code&quot;, monospace;color:#393A34;background-color:#f6f8fa"><textarea style="margin:0;border:0;background:none;box-sizing:inherit;display:inherit;font-family:inherit;font-size:inherit;font-style:inherit;font-variant-ligatures:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;tab-size:inherit;text-indent:inherit;text-rendering:inherit;text-transform:inherit;white-space:pre-wrap;word-break:keep-all;overflow-wrap:break-word;position:absolute;top:0;left:0;height:100%;width:100%;resize:none;color:inherit;overflow:hidden;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;-webkit-text-fill-color:transparent;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px" class="npm__react-simple-code-editor__textarea" autoCapitalize="off" autoComplete="off" autoCorrect="off" spellcheck="false" data-gramm="false">const [iconList, setIconList] = React.useState(icons);
+const [iconSize, setIconSize] = React.useState(&#x27;default&#x27;);
+const [keyword, setKeyword] = React.useState(&#x27;&#x27;);
+
+const onChange = React.useCallback((e) =&gt; {
+  setKeyword(e.target.value.replace(/[^0-9a-z]/ig, &#x27;&#x27;).trim().toLowerCase());
+}, []);
+
+const highlight = React.useCallback((name) =&gt; {
+  if (keyword) {
+    const matched = name.match(new RegExp(`(.*)(${keyword})(.*)`, &#x27;i&#x27;));
+    if (matched) {
+      const [, a, b, c] = matched;
+      return &lt;&gt;{a}&lt;b style={{background: &#x27;yellow&#x27;}}&gt;{b}&lt;/b&gt;{c}&lt;/&gt;;
+    }
+  }
+  return name;
+}, [keyword]);
+
+React.useEffect(() =&gt; {
+  setIconList(Object.entries(icons)
+  .reduce((o, [k, v]) =&gt; k.toLowerCase().indexOf(keyword) !== -1 ? ({
+    ...o,
+    [k]: v,
+  }) : o, {}));
+}, [keyword]);
+
+return (
+  &lt;&gt;
+    &lt;Grid container spacing={3} alignItems=&quot;center&quot;&gt;
+      &lt;Grid item xs&gt;
+        &lt;TextField
+          fullWidth
+          onChange={onChange}
+          variant=&quot;outlined&quot;
+          InputProps={{
+            startAdornment: (
+              &lt;InputAdornment position=&quot;start&quot;&gt;
+                &lt;icons.Search /&gt;
+              &lt;/InputAdornment&gt;
+            ),
+          }}
+        /&gt;
+      &lt;/Grid&gt;
+      &lt;Grid item xs&gt;
+        &lt;RadioGroup row value={iconSize} onChange={(event) =&gt; {
+          setIconSize(event.target.value);
+        }}&gt;
+          &lt;FormControlLabel value=&quot;default&quot; control={&lt;Radio /&gt;} label=&quot;Default&quot; /&gt;
+          &lt;FormControlLabel value=&quot;small&quot; control={&lt;Radio /&gt;} label=&quot;Small&quot; /&gt;
+          &lt;FormControlLabel value=&quot;large&quot; control={&lt;Radio /&gt;} label=&quot;Large&quot; /&gt;
+        &lt;/RadioGroup&gt;
+      &lt;/Grid&gt;
+    &lt;/Grid&gt;
+    &lt;Box display=&quot;flex&quot; flexWrap=&quot;wrap&quot; mt={2}&gt;
+      {Object.keys(iconList).map((name) =&gt; {
+        const Icon = iconList[name];
+        return (
+          &lt;Box
+            key={name}
+            width={160}
+            height={80}
+            align=&quot;center&quot;
+            pt={2}
+          &gt;
+            &lt;Icon fontSize={iconSize} /&gt;
+            &lt;Box&gt;{highlight(name)}&lt;/Box&gt;
+          &lt;/Box&gt;
+        );
+      })}
+    &lt;/Box&gt;
+  &lt;/&gt;
+);</textarea><pre aria-hidden="true" style="margin:0;border:0;background:none;box-sizing:inherit;display:inherit;font-family:inherit;font-size:inherit;font-style:inherit;font-variant-ligatures:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;tab-size:inherit;text-indent:inherit;text-rendering:inherit;text-transform:inherit;white-space:pre-wrap;word-break:keep-all;overflow-wrap:break-word;position:relative;pointer-events:none;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px"><div class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">iconList</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> setIconList</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> React</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">useState</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">icons</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">iconSize</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> setIconSize</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> React</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">useState</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&#x27;default&#x27;</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">keyword</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> setKeyword</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> React</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">useState</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&#x27;&#x27;</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> onChange </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> React</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">useCallback</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">(</span><span class="token parameter">e</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=&gt;</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token function" style="color:#d73a49">setKeyword</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">e</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">target</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">value</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">replace</span><span class="token punctuation" style="color:#393A34">(</span><span class="token regex" style="color:#36acaa">/[^0-9a-z]/ig</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&#x27;&#x27;</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">trim</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">toLowerCase</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> highlight </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> React</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">useCallback</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">(</span><span class="token parameter">name</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=&gt;</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">keyword</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> matched </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> name</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">match</span><span class="token punctuation" style="color:#393A34">(</span><span class="token keyword" style="color:#00009f">new</span><span class="token plain"> </span><span class="token class-name">RegExp</span><span class="token punctuation" style="color:#393A34">(</span><span class="token template-string template-punctuation string" style="color:#e3116c">`</span><span class="token template-string string" style="color:#e3116c">(.*)(</span><span class="token template-string interpolation interpolation-punctuation punctuation" style="color:#393A34">${</span><span class="token template-string interpolation">keyword</span><span class="token template-string interpolation interpolation-punctuation punctuation" style="color:#393A34">}</span><span class="token template-string string" style="color:#e3116c">)(.*)</span><span class="token template-string template-punctuation string" style="color:#e3116c">`</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&#x27;i&#x27;</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">matched</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">      </span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> a</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> b</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> c</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> matched</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">      </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain">a</span><span class="token punctuation" style="color:#393A34">}</span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">b</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">style</span><span class="token tag script language-javascript script-punctuation punctuation" style="color:#393A34">=</span><span class="token tag script language-javascript punctuation" style="color:#393A34">{</span><span class="token tag script language-javascript punctuation" style="color:#393A34">{</span><span class="token tag script language-javascript" style="color:#00009f">background</span><span class="token tag script language-javascript punctuation" style="color:#393A34">:</span><span class="token tag script language-javascript" style="color:#00009f"> </span><span class="token tag script language-javascript string" style="color:#e3116c">&#x27;yellow&#x27;</span><span class="token tag script language-javascript punctuation" style="color:#393A34">}</span><span class="token tag script language-javascript punctuation" style="color:#393A34">}</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain">b</span><span class="token punctuation" style="color:#393A34">}</span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">b</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain">c</span><span class="token punctuation" style="color:#393A34">}</span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> name</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">keyword</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">React</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">useEffect</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=&gt;</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token function" style="color:#d73a49">setIconList</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">Object</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">entries</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">icons</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">reduce</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">(</span><span class="token parameter">o</span><span class="token parameter punctuation" style="color:#393A34">,</span><span class="token parameter"> </span><span class="token parameter punctuation" style="color:#393A34">[</span><span class="token parameter">k</span><span class="token parameter punctuation" style="color:#393A34">,</span><span class="token parameter"> v</span><span class="token parameter punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=&gt;</span><span class="token plain"> k</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">toLowerCase</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">indexOf</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">keyword</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">!==</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">-</span><span class="token number" style="color:#36acaa">1</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">?</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token operator" style="color:#393A34">...</span><span class="token plain">o</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">k</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> v</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> o</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">keyword</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag class-name" style="color:#00009f">Grid</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">container</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">spacing</span><span class="token tag script language-javascript script-punctuation punctuation" style="color:#393A34">=</span><span class="token tag script language-javascript punctuation" style="color:#393A34">{</span><span class="token tag script language-javascript number" style="color:#36acaa">3</span><span class="token tag script language-javascript punctuation" style="color:#393A34">}</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">alignItems</span><span class="token tag attr-value punctuation" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">center</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">      </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag class-name" style="color:#00009f">Grid</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">item</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">xs</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag class-name" style="color:#00009f">TextField</span><span class="token tag" style="color:#00009f"></span></div><div class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">          </span><span class="token tag attr-name" style="color:#00a4db">fullWidth</span><span class="token tag" style="color:#00009f"></span></div><div class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">          </span><span class="token tag attr-name" style="color:#00a4db">onChange</span><span class="token tag script language-javascript script-punctuation punctuation" style="color:#393A34">=</span><span class="token tag script language-javascript punctuation" style="color:#393A34">{</span><span class="token tag script language-javascript" style="color:#00009f">onChange</span><span class="token tag script language-javascript punctuation" style="color:#393A34">}</span><span class="token tag" style="color:#00009f"></span></div><div class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">          </span><span class="token tag attr-name" style="color:#00a4db">variant</span><span class="token tag attr-value punctuation" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">outlined</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag" style="color:#00009f"></span></div><div class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">          </span><span class="token tag attr-name" style="color:#00a4db">InputProps</span><span class="token tag script language-javascript script-punctuation punctuation" style="color:#393A34">=</span><span class="token tag script language-javascript punctuation" style="color:#393A34">{</span><span class="token tag script language-javascript punctuation" style="color:#393A34">{</span><span class="token tag script language-javascript" style="color:#00009f"></span></div><div class="token-line" style="color:#393A34"><span class="token tag script language-javascript" style="color:#00009f">            startAdornment</span><span class="token tag script language-javascript punctuation" style="color:#393A34">:</span><span class="token tag script language-javascript" style="color:#00009f"> </span><span class="token tag script language-javascript punctuation" style="color:#393A34">(</span><span class="token tag script language-javascript" style="color:#00009f"></span></div><div class="token-line" style="color:#393A34"><span class="token tag script language-javascript" style="color:#00009f">              </span><span class="token tag script language-javascript tag punctuation" style="color:#393A34">&lt;</span><span class="token tag script language-javascript tag class-name" style="color:#00009f">InputAdornment</span><span class="token tag script language-javascript tag" style="color:#00009f"> </span><span class="token tag script language-javascript tag attr-name" style="color:#00a4db">position</span><span class="token tag script language-javascript tag attr-value punctuation" style="color:#393A34">=</span><span class="token tag script language-javascript tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag script language-javascript tag attr-value" style="color:#e3116c">start</span><span class="token tag script language-javascript tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag script language-javascript tag punctuation" style="color:#393A34">&gt;</span><span class="token tag script language-javascript" style="color:#00009f"></span></div><div class="token-line" style="color:#393A34"><span class="token tag script language-javascript" style="color:#00009f">                </span><span class="token tag script language-javascript tag punctuation" style="color:#393A34">&lt;</span><span class="token tag script language-javascript tag" style="color:#00009f">icons.Search</span><span class="token tag script language-javascript tag" style="color:#00009f"> </span><span class="token tag script language-javascript tag punctuation" style="color:#393A34">/&gt;</span><span class="token tag script language-javascript" style="color:#00009f"></span></div><div class="token-line" style="color:#393A34"><span class="token tag script language-javascript" style="color:#00009f">              </span><span class="token tag script language-javascript tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag script language-javascript tag class-name" style="color:#00009f">InputAdornment</span><span class="token tag script language-javascript tag punctuation" style="color:#393A34">&gt;</span><span class="token tag script language-javascript" style="color:#00009f"></span></div><div class="token-line" style="color:#393A34"><span class="token tag script language-javascript" style="color:#00009f">            </span><span class="token tag script language-javascript punctuation" style="color:#393A34">)</span><span class="token tag script language-javascript punctuation" style="color:#393A34">,</span><span class="token tag script language-javascript" style="color:#00009f"></span></div><div class="token-line" style="color:#393A34"><span class="token tag script language-javascript" style="color:#00009f">          </span><span class="token tag script language-javascript punctuation" style="color:#393A34">}</span><span class="token tag script language-javascript punctuation" style="color:#393A34">}</span><span class="token tag" style="color:#00009f"></span></div><div class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">        </span><span class="token tag punctuation" style="color:#393A34">/&gt;</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">      </span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag class-name" style="color:#00009f">Grid</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">      </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag class-name" style="color:#00009f">Grid</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">item</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">xs</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag class-name" style="color:#00009f">RadioGroup</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">row</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">value</span><span class="token tag script language-javascript script-punctuation punctuation" style="color:#393A34">=</span><span class="token tag script language-javascript punctuation" style="color:#393A34">{</span><span class="token tag script language-javascript" style="color:#00009f">iconSize</span><span class="token tag script language-javascript punctuation" style="color:#393A34">}</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">onChange</span><span class="token tag script language-javascript script-punctuation punctuation" style="color:#393A34">=</span><span class="token tag script language-javascript punctuation" style="color:#393A34">{</span><span class="token tag script language-javascript punctuation" style="color:#393A34">(</span><span class="token tag script language-javascript parameter" style="color:#00009f">event</span><span class="token tag script language-javascript punctuation" style="color:#393A34">)</span><span class="token tag script language-javascript" style="color:#00009f"> </span><span class="token tag script language-javascript operator" style="color:#393A34">=&gt;</span><span class="token tag script language-javascript" style="color:#00009f"> </span><span class="token tag script language-javascript punctuation" style="color:#393A34">{</span><span class="token tag script language-javascript" style="color:#00009f"></span></div><div class="token-line" style="color:#393A34"><span class="token tag script language-javascript" style="color:#00009f">          </span><span class="token tag script language-javascript function" style="color:#d73a49">setIconSize</span><span class="token tag script language-javascript punctuation" style="color:#393A34">(</span><span class="token tag script language-javascript" style="color:#00009f">event</span><span class="token tag script language-javascript punctuation" style="color:#393A34">.</span><span class="token tag script language-javascript" style="color:#00009f">target</span><span class="token tag script language-javascript punctuation" style="color:#393A34">.</span><span class="token tag script language-javascript" style="color:#00009f">value</span><span class="token tag script language-javascript punctuation" style="color:#393A34">)</span><span class="token tag script language-javascript punctuation" style="color:#393A34">;</span><span class="token tag script language-javascript" style="color:#00009f"></span></div><div class="token-line" style="color:#393A34"><span class="token tag script language-javascript" style="color:#00009f">        </span><span class="token tag script language-javascript punctuation" style="color:#393A34">}</span><span class="token tag script language-javascript punctuation" style="color:#393A34">}</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">          </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag class-name" style="color:#00009f">FormControlLabel</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">value</span><span class="token tag attr-value punctuation" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">default</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">control</span><span class="token tag script language-javascript script-punctuation punctuation" style="color:#393A34">=</span><span class="token tag script language-javascript punctuation" style="color:#393A34">{</span><span class="token tag script language-javascript tag punctuation" style="color:#393A34">&lt;</span><span class="token tag script language-javascript tag class-name" style="color:#00009f">Radio</span><span class="token tag script language-javascript tag" style="color:#00009f"> </span><span class="token tag script language-javascript tag punctuation" style="color:#393A34">/&gt;</span><span class="token tag script language-javascript punctuation" style="color:#393A34">}</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">label</span><span class="token tag attr-value punctuation" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">Default</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag" style="color:#00009f"> </span><span class="token tag punctuation" style="color:#393A34">/&gt;</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">          </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag class-name" style="color:#00009f">FormControlLabel</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">value</span><span class="token tag attr-value punctuation" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">small</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">control</span><span class="token tag script language-javascript script-punctuation punctuation" style="color:#393A34">=</span><span class="token tag script language-javascript punctuation" style="color:#393A34">{</span><span class="token tag script language-javascript tag punctuation" style="color:#393A34">&lt;</span><span class="token tag script language-javascript tag class-name" style="color:#00009f">Radio</span><span class="token tag script language-javascript tag" style="color:#00009f"> </span><span class="token tag script language-javascript tag punctuation" style="color:#393A34">/&gt;</span><span class="token tag script language-javascript punctuation" style="color:#393A34">}</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">label</span><span class="token tag attr-value punctuation" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">Small</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag" style="color:#00009f"> </span><span class="token tag punctuation" style="color:#393A34">/&gt;</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">          </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag class-name" style="color:#00009f">FormControlLabel</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">value</span><span class="token tag attr-value punctuation" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">large</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">control</span><span class="token tag script language-javascript script-punctuation punctuation" style="color:#393A34">=</span><span class="token tag script language-javascript punctuation" style="color:#393A34">{</span><span class="token tag script language-javascript tag punctuation" style="color:#393A34">&lt;</span><span class="token tag script language-javascript tag class-name" style="color:#00009f">Radio</span><span class="token tag script language-javascript tag" style="color:#00009f"> </span><span class="token tag script language-javascript tag punctuation" style="color:#393A34">/&gt;</span><span class="token tag script language-javascript punctuation" style="color:#393A34">}</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">label</span><span class="token tag attr-value punctuation" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">Large</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag" style="color:#00009f"> </span><span class="token tag punctuation" style="color:#393A34">/&gt;</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag class-name" style="color:#00009f">RadioGroup</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">      </span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag class-name" style="color:#00009f">Grid</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag class-name" style="color:#00009f">Grid</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag class-name" style="color:#00009f">Box</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">display</span><span class="token tag attr-value punctuation" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">flex</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">flexWrap</span><span class="token tag attr-value punctuation" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">wrap</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">mt</span><span class="token tag script language-javascript script-punctuation punctuation" style="color:#393A34">=</span><span class="token tag script language-javascript punctuation" style="color:#393A34">{</span><span class="token tag script language-javascript number" style="color:#36acaa">2</span><span class="token tag script language-javascript punctuation" style="color:#393A34">}</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">      </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain">Object</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">keys</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">iconList</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">map</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">(</span><span class="token parameter">name</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=&gt;</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> Icon </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> iconList</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">name</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">          </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag class-name" style="color:#00009f">Box</span><span class="token tag" style="color:#00009f"></span></div><div class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">            </span><span class="token tag attr-name" style="color:#00a4db">key</span><span class="token tag script language-javascript script-punctuation punctuation" style="color:#393A34">=</span><span class="token tag script language-javascript punctuation" style="color:#393A34">{</span><span class="token tag script language-javascript" style="color:#00009f">name</span><span class="token tag script language-javascript punctuation" style="color:#393A34">}</span><span class="token tag" style="color:#00009f"></span></div><div class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">            </span><span class="token tag attr-name" style="color:#00a4db">width</span><span class="token tag script language-javascript script-punctuation punctuation" style="color:#393A34">=</span><span class="token tag script language-javascript punctuation" style="color:#393A34">{</span><span class="token tag script language-javascript number" style="color:#36acaa">160</span><span class="token tag script language-javascript punctuation" style="color:#393A34">}</span><span class="token tag" style="color:#00009f"></span></div><div class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">            </span><span class="token tag attr-name" style="color:#00a4db">height</span><span class="token tag script language-javascript script-punctuation punctuation" style="color:#393A34">=</span><span class="token tag script language-javascript punctuation" style="color:#393A34">{</span><span class="token tag script language-javascript number" style="color:#36acaa">80</span><span class="token tag script language-javascript punctuation" style="color:#393A34">}</span><span class="token tag" style="color:#00009f"></span></div><div class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">            </span><span class="token tag attr-name" style="color:#00a4db">align</span><span class="token tag attr-value punctuation" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">center</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag" style="color:#00009f"></span></div><div class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">            </span><span class="token tag attr-name" style="color:#00a4db">pt</span><span class="token tag script language-javascript script-punctuation punctuation" style="color:#393A34">=</span><span class="token tag script language-javascript punctuation" style="color:#393A34">{</span><span class="token tag script language-javascript number" style="color:#36acaa">2</span><span class="token tag script language-javascript punctuation" style="color:#393A34">}</span><span class="token tag" style="color:#00009f"></span></div><div class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">          </span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">            </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag class-name" style="color:#00009f">Icon</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">fontSize</span><span class="token tag script language-javascript script-punctuation punctuation" style="color:#393A34">=</span><span class="token tag script language-javascript punctuation" style="color:#393A34">{</span><span class="token tag script language-javascript" style="color:#00009f">iconSize</span><span class="token tag script language-javascript punctuation" style="color:#393A34">}</span><span class="token tag" style="color:#00009f"> </span><span class="token tag punctuation" style="color:#393A34">/&gt;</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">            </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag class-name" style="color:#00009f">Box</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token punctuation" style="color:#393A34">{</span><span class="token function" style="color:#d73a49">highlight</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">name</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">}</span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag class-name" style="color:#00009f">Box</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">          </span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag class-name" style="color:#00009f">Box</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">      </span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag class-name" style="color:#00009f">Box</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span></div></pre><style type="text/css">
+/**
+ * Reset the text fill color so that placeholder is visible
+ */
+.npm__react-simple-code-editor__textarea:empty {
+  -webkit-text-fill-color: inherit !important;
+}
+
+/**
+ * Hack to apply on some CSS on IE10 and IE11
+ */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /**
+    * IE doesn't support '-webkit-text-fill-color'
+    * So we use 'color: transparent' to make the text transparent on IE
+    * Unlike other browsers, it doesn't affect caret color in IE
+    */
+  .npm__react-simple-code-editor__textarea {
+    color: transparent !important;
+  }
+
+  .npm__react-simple-code-editor__textarea::selection {
+    background-color: #accef7 !important;
+    color: transparent !important;
+  }
+}
+</style></div></div></main><aside class="jss463 jss3 jss7"><nav class="MuiList-root jss4 MuiList-padding"><li class="MuiListItem-root jss468 leaf MuiListItem-gutters"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit" href="/">Getting Started</a></li><li class="MuiListItem-root jss468 MuiListItem-gutters"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit" href="/components">Components</a></li><li class="MuiListItem-root jss468 MuiListItem-gutters"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit" href="/utilities">Utilities</a></li><li class="MuiListItem-root jss468 MuiListItem-gutters"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit" href="/services">Services</a></li></nav></aside><footer class="jss486 jss6"><p class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary">© <!-- -->2020<!-- --> <!-- -->spax.js.org</p></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/components/icons","query":{},"buildId":"lJ8f1OPXj1LIX3jXxNe5T","nextExport":true,"autoExport":true,"isFallback":false}</script><script nomodule="" src="/_next/static/runtime/polyfills-269e553fbd72faa36915.js"></script><script async="" data-next-page="/components/icons" src="/_next/static/lJ8f1OPXj1LIX3jXxNe5T/pages/components/icons.js"></script><script async="" data-next-page="/_app" src="/_next/static/lJ8f1OPXj1LIX3jXxNe5T/pages/_app.js"></script><script src="/_next/static/runtime/webpack-b65cab0b00afd201cbda.js" async=""></script><script src="/_next/static/chunks/framework.7ae2effc5b53140c6b41.js" async=""></script><script src="/_next/static/chunks/09744744.f2a5d7730b8c03aefecd.js" async=""></script><script src="/_next/static/chunks/b787c9e4.005a483b956bfc537fda.js" async=""></script><script src="/_next/static/chunks/3ffd58240c78583792684c15c0ccd050a259f18b.259d753eae00fece9338.js" async=""></script><script src="/_next/static/runtime/main-31dd8d033ab18ba4a707.js" async=""></script><script src="/_next/static/lJ8f1OPXj1LIX3jXxNe5T/_buildManifest.js" async=""></script><script src="/_next/static/lJ8f1OPXj1LIX3jXxNe5T/_ssgManifest.js" async=""></script></body></html>
